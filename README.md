@@ -88,18 +88,25 @@ npm run preview
 
 ---
 
-## 🧪 Development & Maintenance Commands
+### 🧪 Development & Maintenance Commands
 
-| Command                | Description                                            |
-| ---------------------- | ------------------------------------------------------ |
-| `npm run dev`          | Start the local development server.                    |
-| `npm run build`        | Build the production site and run TypeScript checks.   |
-| `npm run preview`      | Preview the production build locally.                  |
-| `npm run test`         | Run all tests using **Vitest**.                        |
-| `npm run format`       | Check code formatting using **Biome** (dry run).       |
-| `npm run format:write` | Automatically format code with **Biome**.              |
-| `npm run lint`         | Lint code and auto-fix issues using **Biome**.         |
-| `npm run check`        | Run Biome's all-in-one check (lint + format + errors). |
+| Command                | Description                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| `npm run dev`          | Start the local development server with **Vite**.                            |
+| `npm run build`        | Build the production site and run **TypeScript** type checks.                |
+| `npm run preview`      | Preview the production build locally using Vite's preview server.            |
+| `npm run test`         | Run all tests using **Vitest**.                                              |
+| `npm run format`       | Check code formatting with **Biome** (no changes written).                   |
+| `npm run format:write` | Automatically format all files with **Biome** (whitespace, layout, etc.).    |
+| `npm run lint`         | Check code for linting issues using **Biome** (dry run).                     |
+| `npm run lint:write`   | Automatically fix linting issues with **Biome** (safe autofixes only).       |
+| `npm run check`        | Run Biome's full project check — lint + format + type awareness (dry run).   |
+| `npm run check:write`  | Run Biome's full check and **apply all fixes** (includes import sorting). ✅ |
+
+---
+
+✅ **Tip:**
+Use `npm run check:write` instead of `format:write` if you also want Biome to **organize imports** and apply all safe automatic fixes in one go.
 
 ---
 
