@@ -67,7 +67,7 @@ http://localhost:5173
 
 ---
 
-## 🏗️ Build & Deploy
+## 🏗️ Build & Preview
 
 Build the static site:
 
@@ -80,14 +80,6 @@ Preview your production build locally:
 ```bash
 npm run preview
 ```
-
-Deploy to GitHub Pages:
-
-```bash
-npm run deploy
-```
-
-_(Assuming you've configured `vite.config.ts` for pages deployment)_
 
 ---
 
