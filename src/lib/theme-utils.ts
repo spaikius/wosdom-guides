@@ -25,13 +25,11 @@ export function getPreferredTheme(): Theme {
   return Theme.dark;
 }
 
-// Single helper to decide initial theme
 export function getInitialTheme(): Theme {
   const stored = getStoredTheme();
   return stored ?? getPreferredTheme();
 }
 
-// Persist theme into localStorage
 export function persistTheme(theme: Theme) {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(THEME_STORAGE_KEY, theme);
