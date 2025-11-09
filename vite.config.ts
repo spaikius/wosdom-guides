@@ -29,7 +29,7 @@ export default defineConfig({
       targets: [
         {
           src: "guides/**/*.{png,jpg,jpeg,gif,webp}",
-          dest: "guides",
+          dest: "",
         },
       ],
     }),
