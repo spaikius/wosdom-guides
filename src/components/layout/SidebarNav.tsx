@@ -80,7 +80,7 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
 
       {hasChildren && (
         <ul className="ml-6 mt-1 space-y-1 border-l border-border/40 pl-3">
-          {children!.map((sub) => (
+          {children.map((sub) => (
             <li key={sub.label}>
               <Link
                 to={sub.to}

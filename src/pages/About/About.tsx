@@ -1,4 +1,3 @@
-import React from "react";
 import { AboutHeader } from "./AboutHeader";
 import { AboutWhoAmI } from "./AboutWhoAmI";
 import { AboutTechStack } from "./AboutTechStack";

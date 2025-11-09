@@ -13,5 +13,7 @@ export function getAppStorageKeys(): string[] {
 }
 
 export function clearAppStorage(): void {
-  getAppStorageKeys().forEach((key) => localStorage.removeItem(key));
+  getAppStorageKeys().forEach((key) => {
+    localStorage.removeItem(key);
+  });
 }
