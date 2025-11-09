@@ -1,4 +1,4 @@
-import { Home, BookOpenText, Info, FileText } from "lucide-react";
+import { Home, BookOpenText, Info } from "lucide-react";
 import type { NavItem } from "@/types/nav";
 import { ROUTES } from "@/config/routes";
 
@@ -15,22 +15,16 @@ export const MAIN_NAV_ITEMS: NavItem[] = [
     icon: BookOpenText,
     children: [
       {
-        label: "Base Building",
+        label: "Sunfire Castle (SvS)",
         to: ROUTES.GUIDE,
         params: { slug: "base" },
-        icon: "🐀",
+        icon: "🏰",
       },
       {
-        label: "Heroes",
+        label: "Canyon Clash",
         to: ROUTES.GUIDE,
         params: { slug: "heroes" },
-        icon: FileText,
-      },
-      {
-        label: "Events",
-        to: ROUTES.GUIDE,
-        params: { slug: "events" },
-        icon: FileText,
+        icon: "🏜️",
       },
     ],
   },
