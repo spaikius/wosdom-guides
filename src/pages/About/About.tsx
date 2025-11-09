@@ -3,8 +3,7 @@ import { AboutWhoAmI } from './AboutWhoAmI';
 import { AboutTechStack } from './AboutTechStack';
 import { AboutOpenSource } from './AboutOpenSource';
 import { PageContainer } from '@/components/layout/PageContainer';
-
-const WOW_START_YEAR = 2007;
+import { WOW_START_YEAR } from '@/config/constants';
 
 const getWowYears = () => {
   const currentYear = new Date().getFullYear();
