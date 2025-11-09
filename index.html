@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WOSdom Guides - Wisdom for the MiS Alliance</title>
+
+    <meta
+      name="description"
+      content="WOSdom Guides - a growing archive of mildly chaotic yet highly educational guides for the WOS Alliance MiS. Dark mode included, obviously."
+    />
+
+    <meta name="theme-color" content="#020617" />
+    <meta name="color-scheme" content="dark light" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="WOSdom Guides - Wisdom for the MiS Alliance"
+    />
+    <meta
+      property="og:description"
+      content="A cozy dark-themed home for all things WOS Alliance MiS. Read guides, gain WOSdom, achieve enlightenment (or at least fewer bugs)."
+    />
+    <meta property="og:url" content="https://your-github-pages-url.example" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <style>
+      noscript {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: oklch(0.141 0.005 285.823);
+        color: oklch(0.985 0 0);
+        font-family: "Inter", system-ui, sans-serif;
+        text-align: center;
+        padding: 2rem;
+        z-index: 9999;
+      }
+
+      noscript div {
+        background: oklch(0.21 0.006 285.885);
+        color: oklch(0.985 0 0);
+        border: 1px solid oklch(0.274 0.006 286.033);
+        border-radius: 1rem;
+        box-shadow: 0 0 40px oklch(0.21 0.006 285.885 / 0.4);
+        padding: 2rem 2.5rem;
+        max-width: 420px;
+        line-height: 1.6;
+        animation: floatIn 0.6s ease-out;
+      }
+
+      noscript h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      noscript p {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
+      @keyframes floatIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div>
+        <h1>🧩 Missing Dependency: JavaScript</h1>
+        <p>
+          Our guides are powered by 100% pure, ethically sourced JavaScript
+          <br /><br />
+          Without it, this page is like a keyboard without any keys — beautiful,
+          but not very useful 😅
+          <br />
+          Turn JavaScript back on to load your daily dose of WOSdom
+        </p>
+      </div>
+    </noscript>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
