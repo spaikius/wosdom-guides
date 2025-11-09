@@ -1,7 +1,9 @@
+import { Link } from '@tanstack/react-router';
 import type { ReactNode } from 'react';
 import { BottomNav } from '@/components/layout/BottomNav';
 import { SidebarNav } from '@/components/layout/SidebarNav';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { ROUTES } from '@/config/routes';
 import { useNav } from '@/hooks/useNav';
 
 type AppShellProps = {
@@ -21,14 +23,18 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
           {/* Top bar on mobile */}
           <header className="md:hidden border-b bg-background/80 backdrop-blur">
             <div className="flex items-center justify-between px-4 py-3">
-              <div className="flex flex-col">
+              <Link
+                to={ROUTES.HOME}
+                className="flex flex-col no-underline hover:opacity-80 transition-opacity"
+              >
                 <span className="text-sm font-semibold tracking-tight">
                   WOSdom Guides
                 </span>
                 <span className="text-xs text-muted-foreground">
                   WOS Alliance MIS
                 </span>
-              </div>
+              </Link>
+
               <ThemeToggle />
             </div>
           </header>
