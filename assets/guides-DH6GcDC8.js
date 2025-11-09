@@ -1,0 +1,1 @@
+const s=[{slug:"sunfire-castle-svs",label:"Sunfire Castle (SvS)",emoji:"🏰"},{slug:"canyon-clash",label:"Canyon Clash",emoji:"🏜️"}];export{s as default};
