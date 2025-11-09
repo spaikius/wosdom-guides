@@ -4,7 +4,7 @@ import { AboutTechStack } from './AboutTechStack';
 import { AboutOpenSource } from './AboutOpenSource';
 import { PageContainer } from '@/components/layout/PageContainer';
 
-const WOW_START_YEAR = 2007; // tweak if you started earlier/later
+const WOW_START_YEAR = 2007;
 
 const getWowYears = () => {
   const currentYear = new Date().getFullYear();
