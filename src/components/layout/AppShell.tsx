@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { SidebarNav } from "@/components/layout/SidebarNav";
-import { BottomNav } from "@/components/layout/BottomNav";
-import { MAIN_NAV_ITEMS } from "@/config/nav";
+import type { ReactNode } from 'react';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { SidebarNav } from '@/components/layout/SidebarNav';
+import { BottomNav } from '@/components/layout/BottomNav';
+import { MAIN_NAV_ITEMS } from '@/config/nav';
 
 type AppShellProps = {
   children: ReactNode;

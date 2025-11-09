@@ -1,5 +1,5 @@
-import type { LucideIcon } from "lucide-react";
-import type { AppRoute } from "./route";
+import type { LucideIcon } from 'lucide-react';
+import type { AppRoute } from './route';
 
 export type NavItem = {
   label: string;

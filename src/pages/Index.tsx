@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
-import { BookOpenText, Sparkles } from "lucide-react";
-import { PageContainer } from "@/components/layout/PageContainer";
-import { ROUTES } from "@/config/routes";
+import { Button } from '@/components/ui/button';
+import { Link } from '@tanstack/react-router';
+import { BookOpenText, Sparkles } from 'lucide-react';
+import { PageContainer } from '@/components/layout/PageContainer';
+import { ROUTES } from '@/config/routes';
 
 export const Index: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ export const Index: React.FC = () => {
           WOSdom <Sparkles className="h-6 w-6 text-primary" />
         </h1>
         <p className="text-sm md:text-base text-muted-foreground max-w-prose">
-          A cozy, dark-themed home for all things{" "}
+          A cozy, dark-themed home for all things{' '}
           <span className="font-medium">WOS Alliance MIS</span>. Browse guides,
           survive the frost, and maybe ship a few fewer bugs along the way.
         </p>

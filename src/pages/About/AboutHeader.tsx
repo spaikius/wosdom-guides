@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles } from 'lucide-react';
 
 export const AboutHeader: React.FC = () => (
   <header className="space-y-3">
@@ -7,7 +7,7 @@ export const AboutHeader: React.FC = () => (
     </h1>
 
     <p className="text-sm text-muted-foreground">
-      Welcome, survivor! This frosty corner of the web was made for{" "}
+      Welcome, survivor! This frosty corner of the web was made for{' '}
       <span className="font-medium">MiS Alliance</span> members who can’t — or
       prefer not to — scroll through endless Discord chats just to find that one
       guide someone posted three snowstorms ago. Think of this as our little

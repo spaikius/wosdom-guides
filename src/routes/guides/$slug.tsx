@@ -1,14 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { PageContainer } from "@/components/layout/PageContainer";
-import { useParams } from "@tanstack/react-router";
-import { FileText } from "lucide-react";
+import { createFileRoute } from '@tanstack/react-router';
+import { PageContainer } from '@/components/layout/PageContainer';
+import { useParams } from '@tanstack/react-router';
+import { FileText } from 'lucide-react';
 
-export const Route = createFileRoute("/guides/$slug")({
+export const Route = createFileRoute('/guides/$slug')({
   component: GuidePage,
 });
 
 function GuidePage() {
-  const { slug } = useParams({ from: "/guides/$slug" });
+  const { slug } = useParams({ from: '/guides/$slug' });
 
   return (
     <PageContainer>
@@ -33,5 +33,5 @@ function GuidePage() {
 }
 
 function formatSlug(slug: string) {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+  return slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
 }

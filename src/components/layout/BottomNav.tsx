@@ -1,8 +1,8 @@
 // src/layout/BottomNav.tsx
-import { Link } from "@tanstack/react-router";
-import { cn } from "@/lib/utils";
-import type { NavItem } from "@/types/nav";
-import { RenderIcon } from "../RenderIcon";
+import { Link } from '@tanstack/react-router';
+import { cn } from '@/lib/utils';
+import type { NavItem } from '@/types/nav';
+import { RenderIcon } from '../RenderIcon';
 
 type BottomNavProps = {
   items: NavItem[];
@@ -26,11 +26,11 @@ function BottomNavLink({ item }: { item: NavItem }) {
       to={item.to}
       activeOptions={{ exact: item.exact ?? false }}
       className={cn(
-        "flex flex-col items-center justify-center gap-1 px-3 py-1 text-[11px] text-muted-foreground",
-        "transition-colors"
+        'flex flex-col items-center justify-center gap-1 px-3 py-1 text-[11px] text-muted-foreground',
+        'transition-colors',
       )}
       activeProps={{
-        className: "text-accent-foreground",
+        className: 'text-accent-foreground',
       }}
     >
       <RenderIcon icon={item.icon} className="w-4 h-4" />

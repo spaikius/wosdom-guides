@@ -1,5 +1,5 @@
-import type { GuideItem } from "./GuideCard";
-import { GuideCard } from "./GuideCard";
+import type { GuideItem } from './GuideCard';
+import { GuideCard } from './GuideCard';
 
 type GuideGridProps = {
   items: GuideItem[];

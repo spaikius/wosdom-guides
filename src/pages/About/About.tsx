@@ -1,8 +1,8 @@
-import { AboutHeader } from "./AboutHeader";
-import { AboutWhoAmI } from "./AboutWhoAmI";
-import { AboutTechStack } from "./AboutTechStack";
-import { AboutOpenSource } from "./AboutOpenSource";
-import { PageContainer } from "@/components/layout/PageContainer";
+import { AboutHeader } from './AboutHeader';
+import { AboutWhoAmI } from './AboutWhoAmI';
+import { AboutTechStack } from './AboutTechStack';
+import { AboutOpenSource } from './AboutOpenSource';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 const WOW_START_YEAR = 2007; // tweak if you started earlier/later
 

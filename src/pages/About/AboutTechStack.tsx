@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 export const AboutTechStack: React.FC = () => (
   <Card>
@@ -29,7 +29,7 @@ export const AboutTechStack: React.FC = () => (
         maximum time left for raids and keys.
       </p>
       <p className="text-xs text-muted-foreground">
-        In dev terms: this is basically a glorified <code>README.md</code>{" "}
+        In dev terms: this is basically a glorified <code>README.md</code>{' '}
         viewer with extra sparkle. ✨
       </p>
     </CardContent>

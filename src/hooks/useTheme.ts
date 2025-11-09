@@ -1,16 +1,16 @@
-import { getStorageKey } from "@/lib/storage-utils";
+import { getStorageKey } from '@/lib/storage-utils';
 import {
   applyTheme,
   getPreferredTheme,
   getStoredTheme,
-} from "@/lib/theme-utils";
-import { Theme } from "@/types/theme";
-import { useEffect, useState } from "react";
+} from '@/lib/theme-utils';
+import { Theme } from '@/types/theme';
+import { useEffect, useState } from 'react';
 
-const THEME_STORAGE_KEY = getStorageKey("theme");
+const THEME_STORAGE_KEY = getStorageKey('theme');
 
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
     const stored = getStoredTheme();
@@ -22,7 +22,7 @@ export function useTheme() {
   useEffect(() => {
     if (!theme) return;
     applyTheme(theme);
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       window.localStorage.setItem(THEME_STORAGE_KEY, theme);
     }
   }, [theme]);

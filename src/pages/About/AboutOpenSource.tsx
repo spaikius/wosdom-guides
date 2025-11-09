@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import GitHubLogo from "@/assets/github-mark.svg";
-import { GITHUB_REPO_URL } from "@/config/constants";
+} from '@/components/ui/card';
+import GitHubLogo from '@/assets/github-mark.svg';
+import { GITHUB_REPO_URL } from '@/config/constants';
 
 export const AboutOpenSource: React.FC = () => (
   <Card>
@@ -19,7 +19,7 @@ export const AboutOpenSource: React.FC = () => (
     </CardHeader>
     <CardContent className="space-y-3 text-sm">
       <p>
-        The plan is to host this on{" "}
+        The plan is to host this on{' '}
         <span className="font-medium">GitHub Pages</span> as a static site. That
         means:
       </p>

@@ -1,8 +1,8 @@
-import { STORAGE_KEYS, STORAGE_PREFIX } from "@/config/storage-keys";
-import type { StorageKey } from "@/types/storage";
+import { STORAGE_KEYS, STORAGE_PREFIX } from '@/config/storage-keys';
+import type { StorageKey } from '@/types/storage';
 
 export function getStorageKey<K extends StorageKey>(
-  key: K
+  key: K,
 ): `${typeof STORAGE_PREFIX}:${(typeof STORAGE_KEYS)[K]}` {
   return `${STORAGE_PREFIX}:${STORAGE_KEYS[key]}` as const;
 }

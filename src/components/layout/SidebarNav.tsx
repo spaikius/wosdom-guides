@@ -1,23 +1,23 @@
-import { Link } from "@tanstack/react-router";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { cn } from "@/lib/utils";
-import type { NavItem } from "@/types/nav";
-import type React from "react";
-import { RenderIcon } from "../RenderIcon";
+import { Link } from '@tanstack/react-router';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { cn } from '@/lib/utils';
+import type { NavItem } from '@/types/nav';
+import type React from 'react';
+import { RenderIcon } from '../RenderIcon';
 
 type SidebarNavProps = {
   items: NavItem[];
 };
 
 export const SidebarNav: React.FC<SidebarNavProps> = ({ items }) => {
-  const topItems = items.filter((i) => i.label !== "About");
-  const aboutItem = items.find((i) => i.label === "About");
+  const topItems = items.filter((i) => i.label !== 'About');
+  const aboutItem = items.find((i) => i.label === 'About');
 
   return (
     <aside
       className={cn(
-        "hidden md:flex md:flex-col md:w-64 border-r bg-background/80 backdrop-blur",
-        "sticky top-0 h-screen overflow-y-auto"
+        'hidden md:flex md:flex-col md:w-64 border-r bg-background/80 backdrop-blur',
+        'sticky top-0 h-screen overflow-y-auto',
       )}
     >
       {/* Header */}
@@ -66,12 +66,12 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
         params={params}
         activeOptions={{ exact: exact ?? false }}
         className={cn(
-          "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors",
-          "hover:bg-accent/60 hover:text-accent-foreground"
+          'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors',
+          'hover:bg-accent/60 hover:text-accent-foreground',
         )}
         activeProps={{
           className:
-            "bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground",
+            'bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground',
         }}
       >
         {Icon && <Icon className="w-4 h-4" />}
@@ -87,11 +87,11 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
                 params={sub.params}
                 activeOptions={{ exact: sub.exact ?? false }}
                 className={cn(
-                  "flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-foreground transition-colors",
-                  "py-1"
+                  'flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-foreground transition-colors',
+                  'py-1',
                 )}
                 activeProps={{
-                  className: "text-accent-foreground font-medium",
+                  className: 'text-accent-foreground font-medium',
                 }}
               >
                 <RenderIcon icon={sub.icon} className="w-3 h-3" />
