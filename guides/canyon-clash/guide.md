@@ -82,5 +82,3 @@ This is **super important** because it’s **hard to take it back** once capture
 - 🛡️ **Hold your side defenses** — controlling **adjacent or helper buildings** supports the middle and protects flanks.
 - 🔙 If a building has **5 squads waiting**, **retreat** to a nearby friendly or enemy building to keep fighting.
 - 🌀 **Don’t clog the hub!** If **10 players** are already inside a building, **move to another one** — flank, cut reinforcements, or harass enemy routes.
-
----
