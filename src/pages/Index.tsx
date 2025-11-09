@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button';
 import { Link } from '@tanstack/react-router';
 import { BookOpenText, Sparkles } from 'lucide-react';
 import { PageContainer } from '@/components/layout/PageContainer';
+import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
 
 export const Index: React.FC = () => {

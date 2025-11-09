@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { getStorageKey } from '@/lib/storage-utils';
 import {
   applyTheme,
@@ -5,7 +6,6 @@ import {
   getStoredTheme,
 } from '@/lib/theme-utils';
 import { Theme } from '@/types/theme';
-import { useEffect, useState } from 'react';
 
 const THEME_STORAGE_KEY = getStorageKey('theme');
 

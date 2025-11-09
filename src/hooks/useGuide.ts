@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { marked } from 'marked';
 import DOMPurify from 'dompurify';
+import { marked } from 'marked';
+import { useEffect, useState } from 'react';
 import { rewriteImagePaths } from '@/lib/guides-utils';
 
 type UseGuideResult = {

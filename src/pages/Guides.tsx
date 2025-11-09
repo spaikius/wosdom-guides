@@ -1,6 +1,6 @@
+import { BookOpenText } from 'lucide-react';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { BookOpenText } from 'lucide-react';
 import { useGuides } from '@/hooks/useGuides';
 
 export const Guides: React.FC = () => {

@@ -1,9 +1,9 @@
-import { useParams, Link } from '@tanstack/react-router';
+import { Link, useParams } from '@tanstack/react-router';
+import { BookOpenText } from 'lucide-react';
 import { PageContainer } from '@/components/layout/PageContainer';
+import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
 import { useGuide } from '@/hooks/useGuide';
-import { Button } from '@/components/ui/button';
-import { BookOpenText } from 'lucide-react';
 
 export const Guide: React.FC = () => {
   const { slug } = useParams({ from: ROUTES.GUIDE });

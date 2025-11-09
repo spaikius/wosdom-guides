@@ -1,10 +1,10 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client';
 import {
-  RouterProvider,
   createHashHistory,
   createRouter,
+  RouterProvider,
 } from '@tanstack/react-router';
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
 import { routeTree } from './routeTree.gen';
 import './styles.css';
 

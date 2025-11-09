@@ -1,8 +1,8 @@
 import { Link } from '@tanstack/react-router';
-import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { ROUTES } from '@/config/routes';
 import type { LucideIcon } from 'lucide-react';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { ROUTES } from '@/config/routes';
+import { cn } from '@/lib/utils';
 import { RenderIcon } from '../RenderIcon';
 
 export type GuideItem = {

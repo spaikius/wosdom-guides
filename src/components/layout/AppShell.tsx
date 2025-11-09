@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import { SidebarNav } from '@/components/layout/SidebarNav';
 import { BottomNav } from '@/components/layout/BottomNav';
+import { SidebarNav } from '@/components/layout/SidebarNav';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { useNav } from '@/hooks/useNav';
 
 type AppShellProps = {

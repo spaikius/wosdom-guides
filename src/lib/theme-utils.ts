@@ -1,5 +1,4 @@
-import { DEFAULT_THEME, isTheme } from '@/types/theme';
-import { Theme } from '@/types/theme';
+import { DEFAULT_THEME, isTheme, Theme } from '@/types/theme';
 import { getStorageKey } from './storage-utils';
 
 const THEME_STORAGE_KEY = getStorageKey('theme');

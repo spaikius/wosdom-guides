@@ -1,3 +1,4 @@
+import GitHubLogo from '@/assets/github-mark.svg';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -6,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import GitHubLogo from '@/assets/github-mark.svg';
 import { GITHUB_REPO_URL } from '@/config/constants';
 
 export const AboutOpenSource: React.FC = () => (

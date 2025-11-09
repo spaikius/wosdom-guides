@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import type { NavItem } from '@/types/nav';
 import { getMainNav } from '@/config/nav';
+import type { NavItem } from '@/types/nav';
 
 type UseNavResult = {
   navItems: NavItem[];
