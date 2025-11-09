@@ -1,8 +1,11 @@
-import type { NavItem } from '@/types/nav';
-import { findNavItemByLabel } from './nav-utils';
-import { MAIN_NAV_ITEMS } from '@/config/nav';
+export function rewriteImagePaths(markdown: string, slug: string) {
+  const base = import.meta.env.BASE_URL;
 
-export function getGuideNavItems(): NavItem[] {
-  const guidesSection = findNavItemByLabel(MAIN_NAV_ITEMS, 'Guides');
-  return guidesSection?.children ?? [];
+  return markdown.replace(
+    /!\[(.*?)\]\(\.\/(.*?)\)/g,
+    (_match, alt, filename) => {
+      const imageUrl = `${base}guides/${slug}/${filename}`;
+      return `![${alt}](${imageUrl})`;
+    },
+  );
 }

@@ -28,6 +28,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@guides": fileURLToPath(new URL("./guides", import.meta.url)),
     },
   },
 });

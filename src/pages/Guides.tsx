@@ -1,14 +1,10 @@
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { getGuideNavItems } from '@/lib/guides-utils';
 import { BookOpenText } from 'lucide-react';
+import { useGuides } from '@/hooks/useGuides';
 
 export const Guides: React.FC = () => {
-  const guides = getGuideNavItems().map((g) => ({
-    slug: g.params?.slug ?? '',
-    title: g.label,
-    icon: g.icon,
-  }));
+  const { guides } = useGuides();
 
   return (
     <PageContainer>
@@ -20,7 +16,7 @@ export const Guides: React.FC = () => {
         <p className="text-sm text-muted-foreground max-w-prose">
           Welcome to the <span className="font-medium">WOS Alliance MIS</span>{' '}
           guide hub! Browse community tips, survival notes, and strategy
-          breakdowns — all in one place.
+          breakdowns - all in one place.
         </p>
       </header>
 
@@ -28,7 +24,7 @@ export const Guides: React.FC = () => {
         <GuideGrid items={guides} />
 
         <p className="text-xs text-muted-foreground text-center">
-          More guides coming soon — the furnace is still warming up 🔥
+          More guides coming soon - the furnace is still warming up 🔥
         </p>
       </section>
     </PageContainer>

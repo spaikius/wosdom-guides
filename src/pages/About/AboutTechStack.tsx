@@ -25,7 +25,7 @@ export const AboutTechStack: React.FC = () => (
       </ul>
       <p>
         Everything is designed to be simple, fast, and easy to deploy as a
-        static site — perfect for hosting guides with minimal server drama and
+        static site - perfect for hosting guides with minimal server drama and
         maximum time left for raids and keys.
       </p>
       <p className="text-xs text-muted-foreground">

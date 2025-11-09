@@ -1,3 +1,4 @@
+import { ROUTES } from '@/config/routes';
 import type { NavItem } from '@/types/nav';
 
 export function findNavItemByLabel(
@@ -12,4 +13,16 @@ export function findNavItemByLabel(
     }
   }
   return undefined;
+}
+
+export async function loadGuidesNav(): Promise<NavItem[]> {
+  const res = await import('@guides/guides.json');
+  const guides: { slug: string; label: string; emoji?: string }[] = res.default;
+
+  return guides.map((guide) => ({
+    label: guide.label,
+    to: ROUTES.GUIDE,
+    params: { slug: guide.slug },
+    icon: guide.emoji,
+  }));
 }

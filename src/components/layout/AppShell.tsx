@@ -2,17 +2,19 @@ import type { ReactNode } from 'react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { SidebarNav } from '@/components/layout/SidebarNav';
 import { BottomNav } from '@/components/layout/BottomNav';
-import { MAIN_NAV_ITEMS } from '@/config/nav';
+import { useNav } from '@/hooks/useNav';
 
 type AppShellProps = {
   children: ReactNode;
 };
 
 export const AppShell: React.FC<AppShellProps> = ({ children }) => {
+  const { navItems } = useNav();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="flex md:flex-row flex-col">
-        <SidebarNav items={MAIN_NAV_ITEMS} />
+        <SidebarNav items={navItems} />
 
         {/* Main area */}
         <div className="flex-1 flex flex-col min-h-screen md:min-h-0">
@@ -37,7 +39,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
           </main>
 
           {/* Bottom nav for mobile */}
-          <BottomNav items={MAIN_NAV_ITEMS} />
+          <BottomNav items={navItems} />
         </div>
       </div>
     </div>

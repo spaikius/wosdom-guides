@@ -1,25 +1,25 @@
 # 🧊 WOSdom Guides
 
 > **WOSdom (noun):** A collection of knowledge and questionable decisions from the WOS Alliance MiS.  
-> If you've ever lost a guide in Discord chaos — this site is your new safe haven.
+> If you've ever lost a guide in Discord chaos - this site is your new safe haven.
 
 ---
 
 ## 🧭 Overview
 
 **WOSdom Guides** is a static, mobile-friendly knowledge base built for the **Whiteout Survival Alliance MiS** community.  
-It's designed to make reading and browsing guides easy (and maybe even fun) — without needing to dig through endless Discord messages.
+It's designed to make reading and browsing guides easy (and maybe even fun) - without needing to dig through endless Discord messages.
 
 ---
 
 ## ✨ Features
 
-- 🧱 **Static Site** — Fast, light, and deployable anywhere (GitHub Pages, Netlify, etc.)
-- 💻 **Modern Stack** — React 19, Vite, TypeScript, TanStack Router, Tailwind, shadcn/ui
-- 📱 **Responsive Layout** — Works great on phones, tablets, and desktop
-- 🌓 **Dark Mode First** — Because snow glare is no joke
-- 🪄 **Theming** — Smooth transitions with a stylish theme switcher
-- 📚 **Markdown Guides** — Easy to write, easy to update (coming soon!)
+- 🧱 **Static Site** - Fast, light, and deployable anywhere (GitHub Pages, Netlify, etc.)
+- 💻 **Modern Stack** - React 19, Vite, TypeScript, TanStack Router, Tailwind, shadcn/ui
+- 📱 **Responsive Layout** - Works great on phones, tablets, and desktop
+- 🌓 **Dark Mode First** - Because snow glare is no joke
+- 🪄 **Theming** - Smooth transitions with a stylish theme switcher
+- 📚 **Markdown Guides** - Easy to write, easy to update (coming soon!)
 - 💬 **Built with mild chaos and caffeine**
 
 ---
@@ -86,7 +86,7 @@ npm run preview
 ## 📜 License
 
 This project is open-source under the [MIT License](LICENSE).
-You can copy, remix, and deploy it — just don't blame Spaikius if it snows in production. ☃️
+You can copy, remix, and deploy it - just don't blame Spaikius if it snows in production. ☃️
 
 ---
 

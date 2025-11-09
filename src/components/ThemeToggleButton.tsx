@@ -6,13 +6,13 @@ import '@/styles/theme-transitions.css';
 
 type AnimationVariant = 'polygon';
 
-export interface ThemeToggleButtonProps {
+export type ThemeToggleButtonProps = {
   theme?: 'light' | 'dark';
   showLabel?: boolean;
   variant?: AnimationVariant;
   className?: string;
   onClick?: () => void;
-}
+};
 
 export const ThemeToggleButton = ({
   theme = 'light',

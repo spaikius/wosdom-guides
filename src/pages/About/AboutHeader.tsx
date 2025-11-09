@@ -8,10 +8,10 @@ export const AboutHeader: React.FC = () => (
 
     <p className="text-sm text-muted-foreground">
       Welcome, survivor! This frosty corner of the web was made for{' '}
-      <span className="font-medium">MiS Alliance</span> members who can’t — or
-      prefer not to — scroll through endless Discord chats just to find that one
+      <span className="font-medium">MiS Alliance</span> members who can’t - or
+      prefer not to - scroll through endless Discord chats just to find that one
       guide someone posted three snowstorms ago. Think of this as our little
-      campfire of knowledge — without the frostbite.
+      campfire of knowledge - without the frostbite.
     </p>
   </header>
 );
