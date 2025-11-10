@@ -3,9 +3,7 @@ import { ROUTES } from '@/config/routes';
 import { loadGuidesNav } from '@/lib/nav-utils';
 import type { NavItem } from '@/types/nav';
 
-export async function getMainNav(): Promise<NavItem[]> {
-  const guides = await loadGuidesNav();
-
+export function getMainNav(): NavItem[] {
   return [
     {
       label: 'Home',
@@ -17,7 +15,7 @@ export async function getMainNav(): Promise<NavItem[]> {
       label: 'Guides',
       to: ROUTES.GUIDES,
       icon: BookOpenText,
-      children: guides,
+      children: loadGuidesNav(),
     },
     {
       label: 'About',
