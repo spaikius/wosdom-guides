@@ -98,5 +98,27 @@
     </noscript>
 
     <div id="app"></div>
+    <script>
+      (function () {
+        var STORAGE_KEY = "wosdom:theme";
+        var stored = null;
+        try {
+          stored = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {}
+
+        var isValid = stored === "light" || stored === "dark";
+        var prefersLight =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+
+        var initial = isValid ? stored : prefersLight ? "light" : "dark";
+
+        if (initial === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
   </body>
 </html>
