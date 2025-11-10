@@ -1,4 +1,5 @@
 import GitHubLogo from '@/assets/github-mark.svg';
+import { BulletedList } from '@/components/content/BulletedList';
 import { Footnote } from '@/components/content/Footnote';
 import { Button } from '@/components/ui/button';
 import {
@@ -26,11 +27,13 @@ export const AboutOpenSource: React.FC = () => (
         means:
       </p>
 
-      <ul className="list-disc list-inside space-y-1">
-        <li>Free hosting (more budget left for snacks & packs)</li>
-        <li>Easy previews for new changes</li>
-        <li>Anyone can peek at the code or even open PRs</li>
-      </ul>
+      <BulletedList
+        items={[
+          'Free hosting (more budget left for snacks & packs)',
+          'Easy previews for new changes',
+          'Anyone can peek at the code or even open PRs',
+        ]}
+      />
 
       <p>Once the repository is live, you'll find it here:</p>
 

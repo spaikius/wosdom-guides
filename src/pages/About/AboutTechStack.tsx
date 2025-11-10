@@ -1,3 +1,4 @@
+import { BulletedList } from '@/components/content/BulletedList';
 import { Footnote } from '@/components/content/Footnote';
 import {
   Card,
@@ -17,13 +18,16 @@ export const AboutTechStack: React.FC = () => (
     </CardHeader>
     <CardContent className="text-sm space-y-2">
       <p>This project is powered by a pretty modern, lightweight stack:</p>
-      <ul className="list-disc list-inside space-y-1">
-        <li>React + TypeScript</li>
-        <li>Vite for fast dev & builds</li>
-        <li>TanStack Router for routing</li>
-        <li>Tailwind CSS + shadcn v2 for UI</li>
-        <li>Biome and friends to keep the code from going fully feral</li>
-      </ul>
+      <BulletedList
+        items={[
+          'React + TypeScript',
+          'Vite for fast dev & builds',
+          'TanStack Router for routing',
+          'Tailwind CSS + shadcn v2 for UI',
+          'Biome and friends to keep the code from going fully feral',
+        ]}
+      />
+
       <p>
         Everything is designed to be simple, fast, and easy to deploy as a
         static site - perfect for hosting guides with minimal server drama and
