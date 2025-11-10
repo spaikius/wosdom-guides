@@ -77,7 +77,7 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
       </Link>
 
       {hasChildren && (
-        <ul className="ml-6 mt-1 space-y-1 border-l border-border/40 pl-3">
+        <ul className="ml-2 mt-1 space-y-1 border-l border-border/40 pl-3">
           {children.map((sub) => (
             <li key={sub.label}>
               <Link
@@ -85,11 +85,15 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
                 params={sub.params}
                 activeOptions={{ exact: sub.exact ?? false }}
                 className={cn(
-                  'flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-foreground transition-colors',
-                  'py-1',
+                  // base styles
+                  'flex items-center gap-2 text-sm text-muted-foreground transition-colors',
+                  'py-1 px-2 rounded-md',
+                  'hover:text-accent-foreground hover:bg-accent/40',
                 )}
                 activeProps={{
-                  className: 'text-accent-foreground font-medium',
+                  className:
+                    // stronger active treatment
+                    'text-accent-foreground font-medium bg-accent/70',
                 }}
               >
                 <RenderIcon icon={sub.icon} className="w-3 h-3" />

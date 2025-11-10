@@ -7,7 +7,10 @@ type AppBrandProps = {
   className?: string;
 };
 
-export const AppBrand: React.FC<AppBrandProps> = ({ layout = 'sidebar', className }) => {
+export const AppBrand: React.FC<AppBrandProps> = ({
+  layout = 'sidebar',
+  className,
+}) => {
   const title = layout === 'mobile' ? 'WOSdom Guides' : 'WOSdom';
   const subtitle = 'WOS Alliance MIS';
 

@@ -10,7 +10,7 @@ type BottomNavProps = {
 export const BottomNav: React.FC<BottomNavProps> = ({ items }) => {
   return (
     <nav className="md:hidden fixed inset-x-0 bottom-0 border-t bg-background/95 backdrop-blur z-40">
-      <div className="flex items-center justify-around px-2 py-2">
+      <div className="flex items-stretch justify-around">
         {items.map((item) => (
           <BottomNavLink key={item.to} item={item} />
         ))}
@@ -25,14 +25,14 @@ function BottomNavLink({ item }: { item: NavItem }) {
       to={item.to}
       activeOptions={{ exact: item.exact ?? false }}
       className={cn(
-        'flex flex-col items-center justify-center gap-1 px-3 py-1 text-[11px] text-muted-foreground',
-        'transition-colors',
+        'flex flex-col flex-1 items-center justify-center gap-1 py-2 text-[11px] text-muted-foreground transition-colors',
+        'hover:bg-accent/50 hover:text-accent-foreground',
       )}
       activeProps={{
-        className: 'text-accent-foreground',
+        className: 'bg-accent text-accent-foreground',
       }}
     >
-      <RenderIcon icon={item.icon} className="w-4 h-4" />
+      <RenderIcon icon={item.icon} className="w-5 h-5" />
     </Link>
   );
 }

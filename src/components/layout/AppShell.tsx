@@ -17,7 +17,9 @@ export const AppShell: React.FC<AppShellProps> = ({
   className,
 }) => {
   return (
-    <div className={cn('min-h-screen bg-background text-foreground', className)}>
+    <div
+      className={cn('min-h-screen bg-background text-foreground', className)}
+    >
       <div className="flex md:flex-row flex-col">
         {/* Sidebar (desktop) */}
         {sidebar}
