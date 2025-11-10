@@ -1,12 +1,13 @@
 import DOMPurify from 'dompurify';
 import { marked } from 'marked';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { rewriteImagePaths } from '@/lib/guides-utils';
 
 type UseGuideResult = {
   html: string;
   isLoading: boolean;
   error?: Error;
+  refetch: () => Promise<void>;
 };
 
 export function useGuide(slug: string): UseGuideResult {
@@ -14,39 +15,27 @@ export function useGuide(slug: string): UseGuideResult {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error>();
 
-  useEffect(() => {
-    let cancelled = false;
+  const load = useCallback(async () => {
+    setIsLoading(true);
+    setError(undefined);
 
-    const load = async () => {
-      setIsLoading(true);
-      setError(undefined);
-
-      try {
-        const file = await import(`@guides/${slug}/guide.md?raw`);
-        const markdown = rewriteImagePaths(file.default, slug);
-
-        const parsed = (await marked.parse(markdown)) as string;
-        const safe = DOMPurify.sanitize(parsed);
-
-        if (!cancelled) setHtml(safe);
-      } catch {
-        if (!cancelled) {
-          const fallback = `# Guide Not Found 😢\nThis guide doesn't exist (yet)!`;
-          const parsed = (await marked.parse(fallback)) as string;
-          const safe = DOMPurify.sanitize(parsed);
-          setHtml(safe);
-        }
-      } finally {
-        if (!cancelled) setIsLoading(false);
-      }
-    };
-
-    void load();
-
-    return () => {
-      cancelled = true;
-    };
+    try {
+      const file = await import(`@guides/${slug}/guide.md?raw`);
+      const markdown = rewriteImagePaths(file.default, slug);
+      const parsed = (await marked.parse(markdown)) as string;
+      const safe = DOMPurify.sanitize(parsed);
+      setHtml(safe);
+    } catch (err) {
+      setError(err instanceof Error ? err : new Error('Failed to load guide'));
+      setHtml('');
+    } finally {
+      setIsLoading(false);
+    }
   }, [slug]);
 
-  return { html, isLoading, error };
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  return { html, isLoading, error, refetch: load };
 }
