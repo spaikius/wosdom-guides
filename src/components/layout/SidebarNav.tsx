@@ -1,10 +1,10 @@
 import { Link } from '@tanstack/react-router';
 import type React from 'react';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { ROUTES } from '@/config/routes';
 import { cn } from '@/lib/utils';
 import type { NavItem } from '@/types/nav';
 import { RenderIcon } from '../RenderIcon';
+import { AppBrand } from './AppBrand';
 
 type SidebarNavProps = {
   items: NavItem[];
@@ -23,14 +23,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({ items }) => {
     >
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 border-b">
-        <Link
-          to={ROUTES.HOME}
-          className="flex flex-col no-underline hover:opacity-80 transition-opacity"
-        >
-          <span className="text-sm font-semibold tracking-tight">WOSdom</span>
-          <span className="text-xs text-muted-foreground">Alliance MiS</span>
-        </Link>
-
+        <AppBrand layout="sidebar" />
         <ThemeToggle />
       </div>
 
