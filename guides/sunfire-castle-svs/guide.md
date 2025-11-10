@@ -1,115 +1,99 @@
-## 🔥 **SVS — Sunfire Castle Battle Strategy** 🔥
+# 🔥 **SVS - Sunfire Castle Battle Strategy**
 
 ---
 
-### ⚔️ **Phase 1 — First Minutes of the Battle**
+### ⚙️ **Preparation Phase**
 
-#### ⚙️ **Preparation**
+🐉 **Combat buffs and pets** work - always use them for an edge!
+💪 Especially the **Troop Deployment Capacity buff** - the fewer people we need to fill a rally, the more can focus on other objectives.
 
-🐉 **Combat buffs and pets** work — use them for an edge!
+### ⚔️ **Phase 1 - Opening Minutes**
 
-- Especially the **Troop Deployment Capacity buff** — the fewer people we need to fill a rally, the more can focus on other objectives!
+#### 🛡️ **Defensive Rallies**
 
----
-
-#### ⚔️ **Rally Joining Guide**
-
-##### 🛡️ **Defensive Rallies**
-
-- Use **Patrick** as your main hero — his defense skills are key when holding!
+- Main hero: **Patrick** - his defense skills are key when holding.
 - Recommended formations:
   - **60 / 40 / 0** → Infantry / Lancer / Marksman (balanced defense)
-  - **80 / 20 / 0** → when facing strong rally pushes — prioritize survivability
+  - **80 / 20 / 0** → When facing strong rally pushes - prioritize survivability.
 
-##### 💥 **Offensive Rallies**
+#### 💥 **Offensive Rallies**
 
-- Use **Jessie** as your **main hero** — her **R5 skill** gives a **+25% attack boost**, which is essential!
+- Main hero: **Jessie** - her **R5 skill** grants **+25% attack boost**, essential for damage rallies.
 - Recommended formation:
   - **30 / 20 / 50** → Infantry / Lancer / Marksman
 
----
+### 🧭 **Early Battle Plan**
 
-#### 🧭 **Early Battle Plan**
-
-1️⃣ **HxH and RoK:**
+1️⃣ **HxH & RoK:**
 
 - Immediately **create all available rallies** as soon as the battle begins.
 
 2️⃣ **Zantas:**
 
-- Will attempt to **solo capture the Sunfire Castle** right at the start.
+- Attempts to **solo capture the Sunfire Castle** right from the start.
 
 3️⃣ **MiS Members (supporting Zantas):**
 
-- Send **solo attacks** using a **Defensive Formation (60/40/0)** with a **defensive hero as lead** to help hold the castle.
+- Send **solo attacks** using **defensive formations (60/40/0)**
+- Lead with a **defensive hero** to help hold the castle after capture.
 
----
-
-## 🍎 **SVS — Trigger Call & Rally Coordination Protocol** 🍏
+## 🍎 **SVS - Trigger Call & Rally Coordination Protocol** 🍏
 
 ---
 
 ### 🚨 **Trigger Signal**
 
-Once the **enemy's strongest rally** is **created**,  
-Command will issue the **Trigger Call** in rally-lead chat:
+Once the **enemy’s strongest rally** is formed, Command will issue the **Trigger Call** in rally chat:
 
-> apple 🍎🍏🍎🍏
+> 🍎🍏🍎🍏
 
-This is the signal for **RoK** and **HxH** to **initiate their counter rallies**.  
-**Rally Order:** HxH ➡️ RoK ➡️ Zantas
-
----
+This is the signal for **RoK** and **HxH** to **initiate their counter rallies**.
+**Rally Order:** ➡️ **HxH → RoK → Zantas**
 
 ### ⚔️ **Rally Timing & Coordination**
 
-- ⏱️ **Timing is critical** — the gap between rallies should be **no more than 10 seconds**.
-- 💬 **Do not delay or overthink** — once the call is made, **move fast and clean**.
-- 🧭 Both alliances (**RoK + HxH**) must **coordinate rally order** —  
-  → The **strongest rallies** should **launch last** for **maximum impact**.
-- 🗣️ After **RoK** and **HxH rally leads** create their rallies,  
-  they must **immediately notify the team** in chat.
-
----
+- ⏱️ **Timing is critical** - rallies should land within **10 seconds** of each other.
+- 💬 **Do not delay or overthink** - once the call is made, act fast.
+- 🧭 Both **RoK** and **HxH** must coordinate rally order:
+  → **Strongest rallies launch last** for maximum impact.
+- 🗣️ After creating rallies, rally leads must **immediately notify the team in chat**.
 
 ### 🏰 **Castle Control Outcomes**
 
-**If Zantas successfully defends Sunfire Castle:**
-➡️ **HxH** and **RoK** must **cancel their rallies immediately** — conserve troops and maintain Zantas' hold.
+#### ✅ **If Zantas Successfully Defends Sunfire Castle**
 
-**If Zantas is kicked out of the Castle:**
-➡️ Once **RoK** and **HxH** **recapture** the castle,  
-**Zantas** will send his troops to **take control back** from them.
+➡️ **HxH** and **RoK** must **cancel their rallies immediately** - conserve troops and reinforce Zantas’ hold.
 
-> 🏆 This ensures **Zantas remains the final holder** of Sunfire Castle,  
-> while **HxH** and **RoK** act as **main counter-rally and support teams** during the recovery phase.
+#### ❌ **If Zantas is Kicked Out**
 
----
+➡️ After **RoK** and **HxH recapture** the castle,
+**Zantas** will **reclaim control** by sending his own rally next.
 
-## 🏰 **Phase 3 — Taking Back the Castle**
+> 🏆 This ensures **Zantas remains the final holder** of Sunfire Castle,
+> while **HxH** and **RoK** serve as **counter-rally and support teams**.
 
-When the **enemy captures the Sunfire Castle**, we switch into **"Reclaim Mode."**
+## 🏰 **Phase 3 - Taking Back the Castle**
 
----
-
-### ⚔️ **Rally Order & Coordination**
-
-**🎯 Rally Chain:**  
-➡️ **HxH → RoK → Zantas**
-
-1️⃣ Once ready, **HxH** will **create their rallies first.**  
-2️⃣ After **HxH** rallies are launched, **RoK** will **create theirs** in quick succession.  
-3️⃣ Once **RoK's strongest rally leads** give the **command**,  
-➡️ **Zantas** will **create his rally last**, ensuring his **strike lands last** — after both **HxH** and **RoK** have already hit the castle.
-
-> ⏱️ Keep rally intervals **under 10 seconds** for tight synchronization and maximum impact.
+When the **enemy captures Sunfire Castle**, switch into **Reclaim Mode**.
 
 ---
 
-## 📜 **Tips & Important Notices**
+### ⚔️ **Rally Order & Execution**
 
-⚠️ **Troop Mechanics Reminder:**  
-In Sunfire Castle battles, **lightly injured troops remain inside** the castle but **no longer contribute to defense.**  
+**🎯 Rally Chain:** ➡️ **HxH → RoK → Zantas**
+
+1️⃣ **HxH** creates rallies first.
+2️⃣ **RoK** follows immediately after HxH launches.
+3️⃣ **Zantas** launches last, ensuring his **final strike lands after both**.
+
+> ⏱️ Maintain **under 10-second gaps** between rallies for maximum synchronized impact.
+
+---
+
+## 📜 **Tips & Important Reminders**
+
+⚠️ **Troop Mechanics Reminder:**
+In Sunfire Castle battles, **lightly injured troops remain inside** but **no longer contribute to defense power**.
 This means your **active defensive strength drops over time** as more troops become lightly injured.
 
-💥 **All MiS members** inside the castle must **constantly send fresh reinforcements** to replace lightly injured troops and maintain maximum defense power.
+💥 All **MiS members** inside the castle must **continuously send fresh reinforcements** to replace lightly injured troops and **maintain maximum defensive strength**.
