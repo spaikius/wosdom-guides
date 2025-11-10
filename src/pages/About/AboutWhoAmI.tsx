@@ -1,3 +1,4 @@
+import { Footnote } from '@/components/content/Footnote';
 import {
   Card,
   CardContent,
@@ -48,11 +49,11 @@ export const AboutWhoAmI: React.FC<AboutWhoAmIProps> = ({ wowYears }) => (
         job.
       </p>
 
-      <p className="text-xs text-muted-foreground">
+      <Footnote>
         And yes, if you noticed - <span className="font-medium">WOSdom</span> is
         a mix of <span className="font-medium">WOS</span> and{' '}
         <span className="font-medium">wisdom</span>. Clever, right? 😉
-      </p>
+      </Footnote>
     </CardContent>
   </Card>
 );

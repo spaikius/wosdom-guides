@@ -1,4 +1,5 @@
 import GitHubLogo from '@/assets/github-mark.svg';
+import { Footnote } from '@/components/content/Footnote';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -43,10 +44,10 @@ export const AboutOpenSource: React.FC = () => (
         </Button>
       </div>
 
-      <p className="text-xs text-muted-foreground text-center">
+      <Footnote className="text-center">
         If this link 404s right now, it just means Spaikius hasn't pushed the
         code yet. Consider this a friendly reminder to future-me. 😅
-      </p>
+      </Footnote>
     </CardContent>
   </Card>
 );

@@ -1,3 +1,4 @@
+import { Footnote } from '@/components/content/Footnote';
 import {
   Card,
   CardContent,
@@ -28,10 +29,10 @@ export const AboutTechStack: React.FC = () => (
         static site - perfect for hosting guides with minimal server drama and
         maximum time left for raids and keys.
       </p>
-      <p className="text-xs text-muted-foreground">
+      <Footnote>
         In dev terms: this is basically a glorified <code>README.md</code>{' '}
         viewer with extra sparkle. ✨
-      </p>
+      </Footnote>
     </CardContent>
   </Card>
 );

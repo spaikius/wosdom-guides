@@ -1,4 +1,5 @@
 import { BookOpenText } from 'lucide-react';
+import { Footnote } from '@/components/content/Footnote';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { useGuides } from '@/hooks/useGuides';
@@ -23,9 +24,9 @@ export const Guides: React.FC = () => {
       <section className="space-y-3 pt-4">
         <GuideGrid items={guides} />
 
-        <p className="text-xs text-muted-foreground text-center">
+        <Footnote className="text-center">
           More guides coming soon - the furnace is still warming up 🔥
-        </p>
+        </Footnote>
       </section>
     </PageContainer>
   );
