@@ -1,0 +1,1 @@
+import{j as o,c as n}from"./index-C5nR4aPS.js";const x=({children:s,className:a,maxWidth:t="max-w-3xl",...e})=>o.jsx("section",{className:n("w-full",t,"mx-auto","space-y-6","pt-2",a),...e,children:s});export{x as P};
