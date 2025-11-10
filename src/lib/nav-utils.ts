@@ -1,6 +1,6 @@
+import guides from '@guides/guides.json';
 import { ROUTES } from '@/config/routes';
 import type { NavItem } from '@/types/nav';
-import guides from '@guides/guides.json';
 
 export function findNavItemByLabel(
   items: NavItem[],
