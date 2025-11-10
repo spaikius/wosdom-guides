@@ -4,6 +4,39 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@layer utilities {
+  .prose ul,
+  .prose ol {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+  }
+
+  .prose li {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+  }
+
+  .prose li p {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+  }
+
+  .prose p {
+    margin-top: 0.1em !important;
+    margin-bottom: 0.1em !important;
+  }
+
+  .prose blockquote p:first-of-type::before,
+  .prose blockquote p:last-of-type::after {
+    content: none !important;
+  }
+
+  .prose hr {
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+  }
+}
+
 body {
   @apply m-0;
   font-family:
