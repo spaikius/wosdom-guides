@@ -16,7 +16,7 @@ export const AboutOpenSource: React.FC = () => (
     <CardHeader>
       <CardTitle>Open source & hosting</CardTitle>
       <CardDescription>
-        Yes, you'll be able to stalk the code too.
+        Yes, you'll be able to stalk the code too. 🕵️‍♂️
       </CardDescription>
     </CardHeader>
 
@@ -37,7 +37,6 @@ export const AboutOpenSource: React.FC = () => (
 
       <p>Once the repository is live, you'll find it here:</p>
 
-      {/* Centered GitHub button */}
       <div className="flex justify-center">
         <Button asChild variant="outline" size="sm" className="gap-2">
           <a href={GITHUB_REPO_URL} target="_blank" rel="noreferrer">
@@ -48,8 +47,7 @@ export const AboutOpenSource: React.FC = () => (
       </div>
 
       <Footnote className="text-center">
-        If this link 404s right now, it just means Spaikius hasn't pushed the
-        code yet. Consider this a friendly reminder to future-me. 😅
+        The code's open - bugs and all. Enjoy the archaeology. 🧙‍♂️
       </Footnote>
     </CardContent>
   </Card>
