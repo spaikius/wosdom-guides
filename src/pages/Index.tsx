@@ -27,8 +27,8 @@ export const Index: React.FC = () => {
             guides, survive the frost, and maybe ship a few fewer bugs along the
             way.
           </p>
-
-          <div className="flex flex-wrap items-center gap-3 pt-2">
+          
+          <div className="flex justify-center pt-4 pb-2">
             <Button
               asChild
               size="lg"
