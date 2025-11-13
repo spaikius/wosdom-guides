@@ -3,6 +3,7 @@ import { Footnote } from '@/components/content/Footnote';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { useGuides } from '@/hooks/useGuides';
+import { BadgeStrip } from '@/components/content/BadgeStrip';
 
 export const Guides: React.FC = () => {
   const { guides } = useGuides();
@@ -27,25 +28,20 @@ export const Guides: React.FC = () => {
             </div>
           </div>
 
-          {guides?.length ? (
-            <div className="hidden md:flex items-center gap-2 rounded-full border border-border/70 bg-background/80 px-3 py-1 text-xs text-muted-foreground">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              <span>{guides.length} guide{guides.length !== 1 ? 's' : ''} available</span>
-            </div>
-          ) : null}
+          <BadgeStrip className="hidden md:flex">
+            {guides.length} guide{guides.length !== 1 ? 's' : ''} available
+          </BadgeStrip>
         </div>
 
         <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
-          Welcome to the <span className="font-medium">WOS Alliance MIS</span> guide hub.
-          Explore community wisdom, survival notes, and strategy breakdowns - all
-          curated to help you stay one step ahead.
+          Welcome to the <span className="font-medium">WOS Alliance MIS</span>{' '}
+          guide hub. Explore community wisdom, survival notes, and strategy
+          breakdowns - all curated to help you stay one step ahead.
         </p>
       </header>
 
       <section className="space-y-4 md:space-y-5">
-        
-          <GuideGrid items={guides} />
-        
+        <GuideGrid items={guides} />
 
         <Footnote className="text-center text-xs md:text-sm text-muted-foreground">
           More guides are being forged in the furnace - check back soon 🔥

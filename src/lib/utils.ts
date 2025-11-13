@@ -20,7 +20,7 @@ export function isUrl(value: string): boolean {
   } catch {
     return false;
   }
-};
+}
 
 export function isDefinedIcon(value: string): boolean {
   return value in ICONS;

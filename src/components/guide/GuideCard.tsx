@@ -23,16 +23,12 @@ const GuideIcon: React.FC<{ icon: LucideIcon | string }> = ({ icon }) => (
   <span
     className={cn(
       'flex items-center justify-center shrink-0',
-      'text-3xl md:text-5xl leading-none'
+      'text-3xl md:text-5xl leading-none',
     )}
   >
-    <RenderIcon
-      icon={icon}
-      className="w-[1.5em] h-[1.5em] object-contain"
-    />
+    <RenderIcon icon={icon} className="w-[1.5em] h-[1.5em] object-contain" />
   </span>
 );
-
 
 export const GuideCard: React.FC<GuideCardProps> = ({ guide, className }) => {
   const { slug, title, icon, description } = guide;
@@ -45,7 +41,7 @@ export const GuideCard: React.FC<GuideCardProps> = ({ guide, className }) => {
         'group block rounded-xl',
         'focus-visible:outline-none',
         'focus-visible:ring-2 focus-visible:ring-primary/60',
-        'focus-visible:ring-offset-2 focus-visible:ring-offset-background'
+        'focus-visible:ring-offset-2 focus-visible:ring-offset-background',
       )}
       aria-label={title}
     >
@@ -58,7 +54,7 @@ export const GuideCard: React.FC<GuideCardProps> = ({ guide, className }) => {
           'before:pointer-events-none before:absolute before:inset-0 before:-z-10',
           'before:bg-linear-to-br before:from-primary/20 before:via-primary/5 before:to-transparent',
           'before:opacity-0 group-hover:before:opacity-100',
-          className
+          className,
         )}
       >
         <CardHeader className="flex flex-row items-center gap-4">
@@ -73,7 +69,7 @@ export const GuideCard: React.FC<GuideCardProps> = ({ guide, className }) => {
                 className={cn(
                   'h-4 w-4 shrink-0 text-muted-foreground',
                   'transition-transform duration-200',
-                  'group-hover:translate-x-0.5 group-hover:text-primary'
+                  'group-hover:translate-x-0.5 group-hover:text-primary',
                 )}
                 aria-hidden="true"
               />

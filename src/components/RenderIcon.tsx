@@ -23,20 +23,20 @@ export const RenderIcon: React.FC<RenderIconProps> = ({
     return <img src={iconSrc} className={className} style={style} alt="" />;
   }
 
-if (isEmoji(icon)) {
-  return (
-    <span
-      className={cn(
-        className,
-        "inline-flex items-center justify-center leading-none"
-      )}
-      style={style}
-      aria-hidden="true"
-    >
-      <span className="text-[1em] leading-none">{icon}</span>
-    </span>
-  );
-}
+  if (isEmoji(icon)) {
+    return (
+      <span
+        className={cn(
+          className,
+          'inline-flex items-center justify-center leading-none',
+        )}
+        style={style}
+        aria-hidden="true"
+      >
+        <span className="text-[1em] leading-none">{icon}</span>
+      </span>
+    );
+  }
 
   if (isUrl(icon)) {
     return <img src={icon} className={className} style={style} alt="" />;

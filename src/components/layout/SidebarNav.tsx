@@ -20,7 +20,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({ items }) => {
       className={cn(
         'hidden md:flex md:flex-col md:w-64',
         'border-r bg-background/90 backdrop-blur-xl',
-        'sticky top-0 h-screen overflow-y-auto'
+        'sticky top-0 h-screen overflow-y-auto',
       )}
     >
       {/* Header */}
@@ -73,13 +73,13 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
           'text-muted-foreground transition-colors',
           subtle
             ? 'hover:bg-accent/40 hover:text-accent-foreground'
-            : 'hover:bg-accent/60 hover:text-accent-foreground'
+            : 'hover:bg-accent/60 hover:text-accent-foreground',
         )}
         activeProps={{
           className: cn(
             'bg-accent text-accent-foreground',
             'shadow-sm ring-1 ring-border/70',
-            !subtle && 'hover:bg-accent hover:text-accent-foreground'
+            !subtle && 'hover:bg-accent hover:text-accent-foreground',
           ),
         }}
       >
@@ -88,7 +88,7 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
             className={cn(
               'flex h-8 w-8 items-center justify-center shrink-0',
               'rounded-xl bg-accent/10',
-              'text-base'
+              'text-base',
             )}
           >
             <RenderIcon
@@ -112,11 +112,10 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
                 className={cn(
                   'group flex items-center gap-2 rounded-md px-2 py-1',
                   'text-ms text-muted-foreground transition-colors',
-                  'hover:bg-accent/30 hover:text-accent-foreground'
+                  'hover:bg-accent/30 hover:text-accent-foreground',
                 )}
                 activeProps={{
-                  className:
-                    'bg-accent/70 text-accent-foreground font-medium',
+                  className: 'bg-accent/70 text-accent-foreground font-medium',
                 }}
               >
                 {sub.icon && (
@@ -134,4 +133,3 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
     </div>
   );
 };
-

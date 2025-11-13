@@ -1,38 +1,82 @@
 import { Link } from '@tanstack/react-router';
-import { BookOpenText, Sparkles } from 'lucide-react';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
+import { BadgeStrip } from '@/components/content/BadgeStrip';
 
 export const Index: React.FC = () => {
   return (
-    <PageContainer>
-      <header className="space-y-2">
-        <h1 className="text-4xl font-bold tracking-tight flex items-center gap-2">
-          WOSdom <Sparkles className="h-6 w-6 text-primary" />
-        </h1>
-        <p className="text-sm md:text-base text-muted-foreground max-w-prose">
-          A cozy, dark-themed home for all things{' '}
-          <span className="font-medium">WOS Alliance MIS</span>. Browse guides,
-          survive the frost, and maybe ship a few fewer bugs along the way.
-        </p>
+    <PageContainer className="space-y-10 md:space-y-14 pt-6 md:pt-10">
+      <header className="relative">
+        <div className="absolute right-0 -top-2 md:-top-4">
+          <BadgeStrip>WOS Alliance MIS · Guides & Experiments</BadgeStrip>
+        </div>
+
+        <div className="space-y-4 sm:space-y-6 pt-8">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center gap-2">
+            <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
+              WOSdom❄️
+            </span>
+          </h1>
+
+          <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
+            A cozy, dark-themed home for all things{' '}
+            <span className="font-medium">WOS Alliance MIS</span>. Browse
+            guides, survive the frost, and maybe ship a few fewer bugs along the
+            way.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="gap-2 shadow-sm"
+            >
+              <Link to={ROUTES.GUIDES}>Jump into Guides ❄️</Link>
+            </Button>
+          </div>
+        </div>
       </header>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <Button asChild size="lg" className="gap-2" variant="outline">
-          <Link to={ROUTES.GUIDES}>
-            <BookOpenText className="h-4 w-4" />
-            Browse Guides
-          </Link>
-        </Button>
-        <span className="text-xs text-muted-foreground">
-          Works great on mobile, tablet, and desktop ❄️
-        </span>
-      </div>
+      <section
+        className="
+    rounded-2xl border border-border/60 bg-card/60
+    backdrop-blur-xl shadow-sm
+    px-4 py-3 md:px-6 md:py-4
+  "
+      >
+        <div
+          className="
+      flex flex-col gap-3
+      md:grid md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)]
+      md:items-center
+    "
+        >
+          <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground">
+            <span className="inline-flex h-2 w-2 rounded-full bg-primary/80" />
+            <div className="space-y-0.5">
+              <span className="font-medium text-foreground">
+                Built for late-night MIS tinkering.
+              </span>
+              <p className="hidden sm:block text-[11px] md:text-xs text-muted-foreground/90">
+                Guides and tools that don’t mind dark mode, caffeine, or
+                refactors at 2am.
+              </p>
+            </div>
+          </div>
 
-      <footer className="pt-4 text-xs text-muted-foreground">
-        Built with 💙 by <span className="font-medium">Spaikius</span>. Powered
-        by React, Tailwind, and mild chaos.
+          <div className="flex flex-wrap justify-start md:justify-end gap-2 text-[11px] md:text-xs text-muted-foreground">
+            <BadgeStrip>Mobile-ready</BadgeStrip>
+            <BadgeStrip dotColor="bg-sky-400">React · Tailwind</BadgeStrip>
+            <BadgeStrip dotColor="bg-purple-400">Mild chaos inside</BadgeStrip>
+          </div>
+        </div>
+      </section>
+
+      <footer className="pb-6 md:pb-8 text-center text-[11px] md:text-xs text-muted-foreground">
+        Crafted with 💙 by <span className="font-medium">Spaikius</span>. Built
+        with curiosity, caffeine, and the occasional refactor.
       </footer>
     </PageContainer>
   );
