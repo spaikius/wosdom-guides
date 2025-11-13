@@ -2,16 +2,19 @@
   {
     "slug": "sunfire-castle-svs",
     "title": "Sunfire Castle (SvS)",
-    "icon": ":EVENT_SUNFIRE_CASTLE:"
+    "icon": ":EVENT_SUNFIRE_CASTLE:",
+    "description": null
   },
   {
     "slug": "foundry-battle",
     "title": "Foundry Battle",
-    "icon": ":EVENT_FOUNDRY_BATTLE:"
+    "icon": ":EVENT_FOUNDRY_BATTLE:",
+    "description": null
   },
   {
     "slug": "canyon-clash",
     "title": "Canyon Clash",
-    "icon": ":EVENT_CANYON_CLASH:"
+    "icon": ":EVENT_CANYON_CLASH:",
+    "description": null
   }
 ]

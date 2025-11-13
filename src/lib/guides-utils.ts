@@ -19,6 +19,6 @@ export function loadGuides(): GuideItem[] {
     slug: guide.slug,
     title: guide.title,
     icon: ensureValidIcon(guide.icon),
-    description: guide.description,
+    description: guide.description ?? undefined,
   }));
 }
