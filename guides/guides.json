@@ -1,17 +1,17 @@
 [
   {
     "slug": "sunfire-castle-svs",
-    "label": "Sunfire Castle (SvS)",
-    "emoji": "🏰"
+    "title": "Sunfire Castle (SvS)",
+    "icon": "🏰"
   },
   {
     "slug": "foundry-battle",
-    "label": "Foundry Battle",
-    "emoji": "⚒️"
+    "title": "Foundry Battle",
+    "icon": "⚒️"
   },
   {
     "slug": "canyon-clash",
-    "label": "Canyon Clash",
-    "emoji": "🏜️"
+    "title": "Canyon Clash",
+    "icon": "🏜️"
   }
 ]
