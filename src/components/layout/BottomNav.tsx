@@ -27,7 +27,7 @@ function BottomNavLink({ item }: { item: NavItem }) {
 
   const activeClasses = cn(
     baseClasses,
-    'bg-accent/40 text-primary hover:bg-accent/40 hover:text-primary'
+    'bg-accent/40 text-primary hover:bg-accent/40 hover:text-primary',
   );
 
   return (
