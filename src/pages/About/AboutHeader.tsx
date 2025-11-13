@@ -7,7 +7,7 @@ export const AboutHeader: React.FC = () => (
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center gap-2">
           <span>About</span>
           <span className="bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-             WOSdom❄️
+            WOSdom❄️
           </span>
         </h1>
         <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">

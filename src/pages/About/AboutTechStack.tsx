@@ -20,6 +20,8 @@ export const AboutTechStack: React.FC = () => (
       <p>This project is powered by a pretty modern, lightweight stack:</p>
 
       <BulletedList
+        bullet="❄️"
+        variant="custom"
         items={[
           'React + TypeScript',
           'Vite for fast dev & builds',

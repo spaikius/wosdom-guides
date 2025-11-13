@@ -29,6 +29,8 @@ export const AboutOpenSource: React.FC = () => (
       </p>
 
       <BulletedList
+        bullet="❄️"
+        variant="custom"
         items={[
           'Free hosting (more budget left for snacks)',
           'Easy previews for new changes',
@@ -40,7 +42,7 @@ export const AboutOpenSource: React.FC = () => (
         <p>Once the repository is live, you'll find it here</p>
 
         <div className="flex justify-center">
-          <Button asChild variant="outline" size="sm" className="gap-2">
+          <Button asChild variant="outline" size="lg" className="gap-2">
             <a href={GITHUB_REPO_URL} target="_blank" rel="noreferrer">
               <GitHubLogo className="w-4 h-4 dark:fill-white fill-black" />
               View repo on GitHub

@@ -8,6 +8,7 @@ const bulletedListVariants = cva('list-inside', {
       disc: 'list-disc',
       decimal: 'list-decimal',
       none: 'list-none',
+      custom: 'list-none',
     },
     spacing: {
       tight: 'space-y-0.5',
@@ -31,6 +32,7 @@ export interface BulletedListProps
   extends React.HTMLAttributes<HTMLUListElement>,
     VariantProps<typeof bulletedListVariants> {
   items: React.ReactNode[];
+  bullet?: string;
 }
 
 export const BulletedList: React.FC<BulletedListProps> = ({
@@ -38,9 +40,12 @@ export const BulletedList: React.FC<BulletedListProps> = ({
   variant,
   spacing,
   size,
+  bullet,
   className,
   ...props
-}: BulletedListProps) => {
+}) => {
+  const isCustom = variant === 'custom' && bullet;
+
   return (
     <ul
       className={cn(
@@ -50,8 +55,10 @@ export const BulletedList: React.FC<BulletedListProps> = ({
       {...props}
     >
       {items.map((item, i) => (
-        /* biome-ignore lint/suspicious/noArrayIndexKey: Index is good enough in this context */
-        <li key={i}>{item}</li>
+        <li key={i} className={cn(isCustom && 'relative pl-6')}>
+          {isCustom && <span className="absolute left-0 top-0">{bullet}</span>}
+          {item}
+        </li>
       ))}
     </ul>
   );
