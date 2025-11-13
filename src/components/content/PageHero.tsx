@@ -48,7 +48,13 @@ export const PageHero: React.FC<PageHeroProps> = ({
             {showTitle && <span>{title}</span>}
 
             {showHighlight && (
-              <span className="bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent">
+              <span
+                className={cn(
+                  'bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent',
+                  '[--tw-text-opacity:1]',
+                  '[-webkit-text-fill-color:transparent]',
+                )}
+              >
                 {highlight}
                 {emoji ?? ''}
               </span>
