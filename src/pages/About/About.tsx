@@ -14,11 +14,17 @@ export const About: React.FC = () => {
   const wowYears = getWowYears();
 
   return (
-    <PageContainer>
+    <PageContainer className="space-y-8 md:space-y-10 pt-4 md:pt-6">
       <AboutHeader />
-      <AboutWhoAmI wowYears={wowYears} />
-      <AboutTechStack />
-      <AboutOpenSource />
+
+      <main className="space-y-6 md:space-y-8">
+        <AboutWhoAmI wowYears={wowYears} />
+
+        <section className="grid gap-6 md:grid-cols-2">
+          <AboutTechStack />
+          <AboutOpenSource />
+        </section>
+      </main>
     </PageContainer>
   );
 };

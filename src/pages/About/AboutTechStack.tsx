@@ -9,15 +9,16 @@ import {
 } from '@/components/ui/card';
 
 export const AboutTechStack: React.FC = () => (
-  <Card>
+  <Card className="h-full border-border/70 bg-card/80 backdrop-blur-sm">
     <CardHeader>
       <CardTitle>What is this built with?</CardTitle>
       <CardDescription>
         For the curious (and the fellow nerds) 💻
       </CardDescription>
     </CardHeader>
-    <CardContent className="text-sm space-y-2">
+    <CardContent className="text-sm space-y-3">
       <p>This project is powered by a pretty modern, lightweight stack:</p>
+
       <BulletedList
         items={[
           'React + TypeScript',
@@ -33,6 +34,7 @@ export const AboutTechStack: React.FC = () => (
         static site - perfect for hosting guides with minimal server drama and
         maximum time left for raids and keys.
       </p>
+
       <Footnote>
         In dev terms: this is basically a glorified <code>README.md</code>{' '}
         viewer with extra sparkle. ✨

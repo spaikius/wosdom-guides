@@ -13,7 +13,7 @@ type AboutWhoAmIProps = {
 };
 
 export const AboutWhoAmI: React.FC<AboutWhoAmIProps> = ({ wowYears }) => (
-  <Card>
+  <Card className="border-border/70 bg-card/80 backdrop-blur-sm">
     <CardHeader>
       <CardTitle>Who's behind this?</CardTitle>
       <CardDescription>
@@ -21,7 +21,7 @@ export const AboutWhoAmI: React.FC<AboutWhoAmIProps> = ({ wowYears }) => (
       </CardDescription>
     </CardHeader>
 
-    <CardContent className="space-y-2 text-sm">
+    <CardContent className="space-y-3 text-sm">
       <p>
         I'm <span className="font-semibold">Spaikius</span> - not a guide
         writer, just someone who enjoys overanalyzing games a little too much.
@@ -34,10 +34,10 @@ export const AboutWhoAmI: React.FC<AboutWhoAmIProps> = ({ wowYears }) => (
       </p>
 
       <p>
-        Most of my &quot;guides&quot; start as messy Discord messages,
-        screenshots, and late-night brain dumps. This site is just a cleaner,
-        calmer place to park that knowledge so it doesn't get buried under
-        alliance chat, memes, or my own short attention span.
+        Most of my "guides" start as messy Discord messages, screenshots, and
+        late-night brain dumps. This site is just a cleaner, calmer place to
+        park that knowledge so it doesn't get buried under alliance chat, memes,
+        or my own short attention span.
       </p>
 
       <p>
