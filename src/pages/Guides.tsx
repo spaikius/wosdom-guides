@@ -15,7 +15,7 @@ export const Guides: React.FC = () => {
           <PageHero
             size="lg"
             highlight="Guides"
-            subtitle="WOS Alliance MIS · Knowledge hub"
+            subtitle="WOS Alliance MiS · Knowledge hub"
             badge={
               <BadgeStrip className="hidden md:flex">
                 {guides.length} guide{guides.length !== 1 ? 's' : ''} available
@@ -25,7 +25,7 @@ export const Guides: React.FC = () => {
         </div>
 
         <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
-          Welcome to the <span className="font-medium">WOS Alliance MIS</span>{' '}
+          Welcome to the <span className="font-medium">WOS Alliance MiS</span>{' '}
           guide hub. Explore community wisdom, survival notes, and strategy
           breakdowns - all curated to help you stay one step ahead.
         </p>

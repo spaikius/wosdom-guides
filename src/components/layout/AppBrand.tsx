@@ -1,19 +1,19 @@
 import { Link } from '@tanstack/react-router';
 import { ROUTES } from '@/config/routes';
 import { cn } from '@/lib/utils';
+import { PROJECT_NAME } from '@/config/constants';
 
 type AppBrandProps = {
-  layout?: 'sidebar' | 'mobile';
+  title?: string;
+  subtitle?: string;
   className?: string;
 };
 
 export const AppBrand: React.FC<AppBrandProps> = ({
-  layout = 'sidebar',
+  title = PROJECT_NAME,
+  subtitle = 'WOS Alliance MiS',
   className,
 }) => {
-  const title = layout === 'mobile' ? 'WOSdom Guides' : 'WOSdom';
-  const subtitle = 'WOS Alliance MIS';
-
   return (
     <Link
       to={ROUTES.HOME}
@@ -22,7 +22,14 @@ export const AppBrand: React.FC<AppBrandProps> = ({
         className,
       )}
     >
-      <span className="text-sm font-semibold tracking-tight">{title}</span>
+      <span
+        className={cn(
+          'text-sm font-semibold tracking-tight',
+          'bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent',
+        )}
+      >
+        {title}
+      </span>
       <span className="text-xs text-muted-foreground">{subtitle}</span>
     </Link>
   );

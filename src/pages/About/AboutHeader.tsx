@@ -1,12 +1,13 @@
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { PageHero } from '@/components/content/PageHero';
+import { PROJECT_NAME } from '@/config/constants';
 
 export const AboutHeader: React.FC = () => (
   <header className="space-y-5">
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <PageHero
         title="About"
-        highlight="WOSdom❄️"
+        highlight={PROJECT_NAME}
         subtitle="Behind the frost · Why this exists"
         badge={
           <BadgeStrip className="mt-1 sm:mt-0">

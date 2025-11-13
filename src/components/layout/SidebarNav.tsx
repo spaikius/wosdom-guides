@@ -25,7 +25,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({ items }) => {
     >
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 border-b border-border/60">
-        <AppBrand layout="sidebar" />
+        <AppBrand />
         <ThemeToggle />
       </div>
 

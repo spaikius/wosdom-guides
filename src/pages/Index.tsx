@@ -5,6 +5,7 @@ import { ROUTES } from '@/config/routes';
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { cn } from '@/lib/utils';
 import { PageHero } from '@/components/content/PageHero';
+import { PROJECT_NAME } from '@/config/constants';
 
 export const Index: React.FC = () => {
   return (
@@ -12,17 +13,17 @@ export const Index: React.FC = () => {
       <div className="relative">
         <PageHero
           size="lg"
-          highlight="WOSdom❄️"
-          subtitle="WOS Alliance MIS · Knowledge hub"
+          highlight={PROJECT_NAME}
+          subtitle="WOS Alliance MiS · Knowledge hub"
           badge={
-            <BadgeStrip>WOS Alliance MIS · Guides & Experiments</BadgeStrip>
+            <BadgeStrip>WOS Alliance MiS · Guides & Experiments</BadgeStrip>
           }
         />
 
         <div className="space-y-4 sm:space-y-6 pt-8">
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
             A cozy, dark-themed home for all things{' '}
-            <span className="font-medium">WOS Alliance MIS</span>. Browse
+            <span className="font-medium">WOS Alliance MiS</span>. Browse
             guides, survive the frost, and maybe ship a few fewer bugs along the
             way.
           </p>
@@ -58,7 +59,7 @@ export const Index: React.FC = () => {
             <span className="inline-flex h-2 w-2 rounded-full bg-primary/80" />
             <div className="space-y-0.5">
               <span className="font-medium text-foreground">
-                Built for late-night MIS tinkering.
+                Built for late-night MiS tinkering.
               </span>
               <p className="hidden sm:block text-[11px] md:text-xs text-muted-foreground/90">
                 Guides and tools that don’t mind dark mode, caffeine, or
