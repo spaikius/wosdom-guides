@@ -14,7 +14,7 @@ export const About: React.FC = () => {
   const wowYears = getWowYears();
 
   return (
-    <PageContainer className="space-y-8 md:space-y-10 pt-4 md:pt-6">
+    <PageContainer>
       <AboutHeader />
 
       <main className="space-y-6 md:space-y-8">
