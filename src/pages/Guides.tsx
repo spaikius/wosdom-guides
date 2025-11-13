@@ -13,7 +13,7 @@ export const Guides: React.FC = () => {
       <div className="space-y-4 border-b border-border/60 pb-4 md:pb-6 mb-4">
         <div className="flex items-center justify-between gap-4">
           <PageHero
-            size='lg'
+            size="lg"
             highlight="Guides"
             subtitle="WOS Alliance MIS · Knowledge hub"
             badge={

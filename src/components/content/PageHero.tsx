@@ -43,7 +43,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
             className={cn(
               'font-bold tracking-tight flex flex-wrap items-center gap-2',
               size === 'lg' ? 'text-4xl md:text-5xl' : 'text-3xl md:text-4xl',
-              !showTitle && 'gap-0'
+              !showTitle && 'gap-0',
             )}
           >
             {showTitle && <span>{title}</span>}
@@ -65,12 +65,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
       </div>
 
       {badge && (
-        <div
-          className={cn(
-            'sm:ml-auto',    
-            'flex justify-center sm:justify-end',
-          )}
-        >
+        <div className={cn('sm:ml-auto', 'flex justify-center sm:justify-end')}>
           {badge}
         </div>
       )}

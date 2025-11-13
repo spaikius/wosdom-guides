@@ -4,22 +4,22 @@ import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { cn } from '@/lib/utils';
+import { PageHero } from '@/components/content/PageHero';
 
 export const Index: React.FC = () => {
   return (
-    <PageContainer className="space-y-10 md:space-y-14 pt-6 md:pt-10">
-      <header className="relative">
-        <div className="absolute right-0 -top-2 md:-top-4">
-          <BadgeStrip>WOS Alliance MIS · Guides & Experiments</BadgeStrip>
-        </div>
+    <PageContainer>
+      <div className="relative">
+        <PageHero
+          size="lg"
+          highlight="WOSdom❄️"
+          subtitle="WOS Alliance MIS · Knowledge hub"
+          badge={
+            <BadgeStrip>WOS Alliance MIS · Guides & Experiments</BadgeStrip>
+          }
+        />
 
         <div className="space-y-4 sm:space-y-6 pt-8">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center gap-2">
-            <span className="bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
-              WOSdom❄️
-            </span>
-          </h1>
-
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
             A cozy, dark-themed home for all things{' '}
             <span className="font-medium">WOS Alliance MIS</span>. Browse
@@ -38,7 +38,7 @@ export const Index: React.FC = () => {
             </Button>
           </div>
         </div>
-      </header>
+      </div>
 
       <section
         className={cn(
