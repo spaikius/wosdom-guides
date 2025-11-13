@@ -1,5 +1,5 @@
-import { cn, getDefinedIcon, isDefinedIcon, isEmoji, isUrl } from '@/lib/utils';
 import type { LucideIcon } from 'lucide-react';
+import { cn, getDefinedIcon, isDefinedIcon, isEmoji, isUrl } from '@/lib/utils';
 
 interface RenderIconProps extends React.HTMLAttributes<SVGSVGElement> {
   icon?: LucideIcon | string;

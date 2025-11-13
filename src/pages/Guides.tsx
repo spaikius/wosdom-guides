@@ -1,9 +1,9 @@
+import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { Footnote } from '@/components/content/Footnote';
+import { PageHero } from '@/components/content/PageHero';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { useGuides } from '@/hooks/useGuides';
-import { BadgeStrip } from '@/components/content/BadgeStrip';
-import { PageHero } from '@/components/content/PageHero';
 
 export const Guides: React.FC = () => {
   const { guides } = useGuides();

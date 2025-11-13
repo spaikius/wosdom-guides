@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Link } from '@tanstack/react-router';
 import type { LucideIcon } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -103,7 +102,7 @@ const SideNavLink: React.FC<SideNavLinkProps> = ({
 
       {hasChildren && (
         <ul className="ml-3 mt-1 space-y-1 border-l border-border/40 pl-3">
-          {children!.map((sub) => (
+          {children?.map((sub) => (
             <li key={sub.label}>
               <Link
                 to={sub.to}

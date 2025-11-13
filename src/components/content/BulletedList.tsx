@@ -55,6 +55,7 @@ export const BulletedList: React.FC<BulletedListProps> = ({
       {...props}
     >
       {items.map((item, i) => (
+        /* biome-ignore lint/suspicious/noArrayIndexKey: Stable list; index key is fine here */
         <li key={i} className={cn(isCustom && 'relative pl-6')}>
           {isCustom && <span className="absolute left-0 top-0">{bullet}</span>}
           {item}

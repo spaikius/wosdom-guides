@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router';
+import { PROJECT_NAME } from '@/config/constants';
 import { ROUTES } from '@/config/routes';
 import { cn } from '@/lib/utils';
-import { PROJECT_NAME } from '@/config/constants';
 
 type AppBrandProps = {
   title?: string;

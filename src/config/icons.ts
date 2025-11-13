@@ -1,8 +1,8 @@
-import Item_FireCrystal_Icon from '@/assets/icons/item_fire_crystal.png';
+import Default_Icon from '@/assets/default_icon.png';
 import Event_CanyonClash_Icon from '@/assets/icons/event_canyon_clash.png';
 import Event_FoundryBattle_Icon from '@/assets/icons/event_foundry_battle.png';
 import Event_SunfireCastle_Icon from '@/assets/icons/event_sunfire_castle.png';
-import Default_Icon from '@/assets/default_icon.png';
+import Item_FireCrystal_Icon from '@/assets/icons/item_fire_crystal.png';
 
 export const ICONS = {
   ':ITEM_FIRE_CRYSTAL:': Item_FireCrystal_Icon,

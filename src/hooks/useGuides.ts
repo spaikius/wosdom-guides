@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { GuideItem } from '@/types/guide';
 import { loadGuides } from '@/lib/guides-utils';
+import type { GuideItem } from '@/types/guide';
 
 export type UseGuidesResult = {
   guides: GuideItem[];

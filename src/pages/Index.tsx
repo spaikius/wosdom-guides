@@ -1,11 +1,11 @@
 import { Link } from '@tanstack/react-router';
+import { BadgeStrip } from '@/components/content/BadgeStrip';
+import { PageHero } from '@/components/content/PageHero';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Button } from '@/components/ui/button';
-import { ROUTES } from '@/config/routes';
-import { BadgeStrip } from '@/components/content/BadgeStrip';
-import { cn } from '@/lib/utils';
-import { PageHero } from '@/components/content/PageHero';
 import { PROJECT_NAME } from '@/config/constants';
+import { ROUTES } from '@/config/routes';
+import { cn } from '@/lib/utils';
 
 export const Index: React.FC = () => {
   return (

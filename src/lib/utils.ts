@@ -1,9 +1,8 @@
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import { DEFAULT_GUIDE_ICON } from '@/config/constants';
 import { ICONS } from '@/config/icons';
 import type { ValueOf } from '@/types/util';
-import { type ClassValue, clsx } from 'clsx';
-import { icons } from 'lucide-react';
-import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));

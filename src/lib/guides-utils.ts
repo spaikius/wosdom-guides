@@ -1,6 +1,6 @@
 import guides from '@guides/guides.json';
-import { ensureValidIcon } from './utils';
 import type { GuideItem } from '@/types/guide';
+import { ensureValidIcon } from './utils';
 
 export function rewriteImagePaths(markdown: string, slug: string) {
   const base = import.meta.env.BASE_URL;
