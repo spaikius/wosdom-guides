@@ -133,13 +133,13 @@ When you add a new guide, register it in **`guides/guides.json`**:
 [
   {
     "slug": "canyon-clash",
-    "label": "Canyon Clash",
-    "emoji": "🏜️"
+    "title": "Canyon Clash",
+    "icon": "🏜️"
   },
   {
     "slug": "sunfire-castle",
-    "label": "Sunfire Castle (SvS)",
-    "emoji": "🏰"
+    "title": "Sunfire Castle (SvS)",
+    "icon": "🏰"
   }
 ]
 ```
