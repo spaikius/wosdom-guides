@@ -1,6 +1,7 @@
 import guides from '@guides/guides.json';
 import { ROUTES } from '@/config/routes';
 import type { NavItem } from '@/types/nav';
+import { ensureValidIcon } from './utils';
 
 export function findNavItemByLabel(
   items: NavItem[],
@@ -18,9 +19,9 @@ export function findNavItemByLabel(
 
 export function loadGuidesNav(): NavItem[] {
   return guides.map((guide) => ({
-    label: guide.label,
+    label: guide.title,
     to: ROUTES.GUIDE,
     params: { slug: guide.slug },
-    icon: guide.emoji,
+    icon: ensureValidIcon(guide.icon),
   }));
 }
