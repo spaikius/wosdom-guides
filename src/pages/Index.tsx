@@ -3,6 +3,7 @@ import { PageContainer } from '@/components/layout/PageContainer';
 import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
 import { BadgeStrip } from '@/components/content/BadgeStrip';
+import { cn } from '@/lib/utils';
 
 export const Index: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const Index: React.FC = () => {
 
         <div className="space-y-4 sm:space-y-6 pt-8">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center gap-2">
-            <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
+            <span className="bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
               WOSdom❄️
             </span>
           </h1>
@@ -40,18 +41,18 @@ export const Index: React.FC = () => {
       </header>
 
       <section
-        className="
-    rounded-2xl border border-border/60 bg-card/60
-    backdrop-blur-xl shadow-sm
-    px-4 py-3 md:px-6 md:py-4
-  "
+        className={cn(
+          'rounded-2xl border border-border/60 bg-card/60',
+          'backdrop-blur-xl shadow-sm',
+          'px-4 py-3 md:px-6 md:py-4',
+        )}
       >
         <div
-          className="
-      flex flex-col gap-3
-      md:grid md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)]
-      md:items-center
-    "
+          className={cn(
+            'flex flex-col gap-3',
+            'md:grid md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)]',
+            'md:items-center',
+          )}
         >
           <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground">
             <span className="inline-flex h-2 w-2 rounded-full bg-primary/80" />
@@ -66,8 +67,7 @@ export const Index: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-start md:justify-end gap-2 text-[11px] md:text-xs text-muted-foreground">
-            <BadgeStrip>Mobile-ready</BadgeStrip>
+          <div className="flex flex-wrap justify-center md:justify-end gap-2 text-[11px] md:text-xs text-muted-foreground">
             <BadgeStrip dotColor="bg-sky-400">React · Tailwind</BadgeStrip>
             <BadgeStrip dotColor="bg-purple-400">Mild chaos inside</BadgeStrip>
           </div>
