@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -102,17 +102,17 @@
 
     <div id="app"></div>
     <script>
-      (function () {
+      (() => {
         var STORAGE_KEY = "wosdom:theme";
         var stored = null;
         try {
           stored = localStorage.getItem(STORAGE_KEY);
-        } catch (e) {}
+        } catch (_e) {}
 
         var isValid = stored === "light" || stored === "dark";
-        var prefersLight =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: light)").matches;
+        var prefersLight = window.matchMedia?.(
+          "(prefers-color-scheme: light)"
+        ).matches;
 
         var initial = isValid ? stored : prefersLight ? "light" : "dark";
 
