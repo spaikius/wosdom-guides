@@ -51,8 +51,6 @@ export const PageHero: React.FC<PageHeroProps> = ({
               <span
                 className={cn(
                   'bg-hero-highlight bg-clip-text text-transparent',
-                  '[--tw-text-opacity:1]',
-                  '[-webkit-text-fill-color:transparent]',
                 )}
               >
                 {highlight}
