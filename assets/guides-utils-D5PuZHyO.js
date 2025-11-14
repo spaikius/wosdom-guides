@@ -1,1 +1,0 @@
-import{g as n,f as a}from"./index-3gqufQfw.js";function u(e,s){const t="/wosdom-guides/";return e.replace(/!\[(.*?)\]\(\.\/(.*?)\)/g,(c,r,i)=>{const o=`${t}guides/${s}/${i}`;return`![${r}](${o})`})}function d(){return n.map(e=>({slug:e.slug,title:e.title,icon:a(e.icon),description:e.description??void 0}))}export{d as l,u as r};
