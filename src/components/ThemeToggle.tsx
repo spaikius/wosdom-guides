@@ -13,11 +13,6 @@ export function ThemeToggle() {
   };
 
   return (
-    <ThemeToggleButton
-      theme={theme}
-      variant="polygon"
-      showLabel={false}
-      onClick={handleClick}
-    />
+    <ThemeToggleButton theme={theme} showLabel={false} onClick={handleClick} />
   );
 }

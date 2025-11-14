@@ -4,12 +4,9 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import '@/styles/theme-transitions.css';
 
-type AnimationVariant = 'polygon';
-
 export type ThemeToggleButtonProps = {
   theme?: 'light' | 'dark';
   showLabel?: boolean;
-  variant?: AnimationVariant;
   className?: string;
   onClick?: () => void;
 };
@@ -17,7 +14,6 @@ export type ThemeToggleButtonProps = {
 export const ThemeToggleButton = ({
   theme = 'light',
   showLabel = false,
-  variant = 'polygon',
   className,
   onClick,
 }: ThemeToggleButtonProps) => {
@@ -26,10 +22,7 @@ export const ThemeToggleButton = ({
     const style = document.createElement('style');
     style.id = styleId;
 
-    let css = '';
-
-    if (variant === 'polygon') {
-      css = `
+    const css = `
         @supports (view-transition-name: root) {
           ::view-transition-old(root) {
             animation: none;
@@ -39,22 +32,19 @@ export const ThemeToggleButton = ({
           }
         }
       `;
-    }
 
-    if (css) {
-      style.textContent = css;
-      document.head.appendChild(style);
+    style.textContent = css;
+    document.head.appendChild(style);
 
-      setTimeout(() => {
-        const styleEl = document.getElementById(styleId);
-        if (styleEl) {
-          styleEl.remove();
-        }
-      }, 3000);
-    }
+    setTimeout(() => {
+      const styleEl = document.getElementById(styleId);
+      if (styleEl) {
+        styleEl.remove();
+      }
+    }, 3000);
 
     onClick?.();
-  }, [onClick, variant]);
+  }, [onClick]);
 
   return (
     <Button

@@ -7,6 +7,8 @@ export function applyTheme(theme: Theme) {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
 
+  root.dataset.theme = theme;
+
   if (theme === Theme.dark) root.classList.add(Theme.dark);
   else root.classList.remove(Theme.dark);
 }
