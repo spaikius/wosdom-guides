@@ -1,7 +1,7 @@
 import DOMPurify from 'dompurify';
 import { marked } from 'marked';
 import { useCallback, useEffect, useState } from 'react';
-import { rewriteImagePaths } from '@/lib/guides-utils';
+import { rewriteImagePaths, wrapImagesWithLightBox } from '@/lib/guides-utils';
 
 type UseGuideResult = {
   html: string;
@@ -24,7 +24,8 @@ export function useGuide(slug: string): UseGuideResult {
       const markdown = rewriteImagePaths(file.default, slug);
       const parsed = (await marked.parse(markdown)) as string;
       const safe = DOMPurify.sanitize(parsed);
-      setHtml(safe);
+      const wrapped = wrapImagesWithLightBox(safe);
+      setHtml(wrapped);
     } catch (err) {
       setError(err instanceof Error ? err : new Error('Failed to load guide'));
       setHtml('');

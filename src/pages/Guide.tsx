@@ -1,6 +1,7 @@
 import { Link, useParams } from '@tanstack/react-router';
 import { BookOpenText } from 'lucide-react';
 import { ErrorState } from '@/components/ErrorState';
+import { Lightbox } from '@/components/Lightbox';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { GuideSkeleton } from '@/components/skeletons/GuideSkeleton';
 import { Button } from '@/components/ui/button';
@@ -21,6 +22,7 @@ export const Guide: React.FC = () => {
         <article className="prose dark:prose-invert max-w-none">
           {/* biome-ignore lint/security/noDangerouslySetInnerHtml: HTML is sanitized with DOMPurify */}
           <div dangerouslySetInnerHTML={{ __html: html }} />
+          <Lightbox />
         </article>
       )}
 
