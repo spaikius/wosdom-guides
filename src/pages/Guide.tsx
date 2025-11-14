@@ -2,7 +2,7 @@ import { Link, useParams } from '@tanstack/react-router';
 import { BookOpenText } from 'lucide-react';
 import { ErrorState } from '@/components/ErrorState';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { ArticleSkeleton } from '@/components/skeletons/GuideSkeleton';
+import { GuideSkeleton } from '@/components/skeletons/GuideSkeleton';
 import { Button } from '@/components/ui/button';
 import { ROUTES } from '@/config/routes';
 import { useGuide } from '@/hooks/useGuide';
@@ -16,7 +16,7 @@ export const Guide: React.FC = () => {
       {error ? (
         <ErrorState onRetry={refetch} />
       ) : isLoading ? (
-        <ArticleSkeleton />
+        <GuideSkeleton />
       ) : (
         <article className="prose dark:prose-invert max-w-none">
           {/* biome-ignore lint/security/noDangerouslySetInnerHtml: HTML is sanitized with DOMPurify */}
