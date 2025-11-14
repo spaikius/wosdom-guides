@@ -50,7 +50,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
             {showHighlight && (
               <span
                 className={cn(
-                  'bg-linear-to-r from-primary to-blue-400 bg-clip-text text-transparent',
+                  'bg-hero-highlight bg-clip-text text-transparent',
                   '[--tw-text-opacity:1]',
                   '[-webkit-text-fill-color:transparent]',
                 )}

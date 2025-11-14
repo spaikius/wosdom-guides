@@ -5,6 +5,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer utilities {
+  .bg-hero-highlight {
+    background-image: linear-gradient(
+      to right,
+      var(--hero-highlight-from),
+      var(--hero-highlight-to)
+    );
+  }
+
   .prose ul,
   .prose ol {
     margin-top: 0em !important;
@@ -76,6 +84,9 @@ code {
 }
 
 @theme inline {
+  --color-hero-highlight-from: var(--hero-highlight-from);
+  --color-hero-highlight-to: var(--hero-highlight-to);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -116,6 +127,9 @@ code {
 :root {
   color-scheme: light dark;
 
+  --hero-highlight-from: oklch(0.21 0.006 285.885);
+  --hero-highlight-to: oklch(0.6 0.12 250);
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -151,6 +165,9 @@ code {
 }
 
 .dark {
+  --hero-highlight-from: oklch(0.98 0 0);
+  --hero-highlight-to: oklch(0.74 0.18 250);
+
   --background: oklch(0.141 0.005 285.823);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
