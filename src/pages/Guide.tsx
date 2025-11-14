@@ -24,7 +24,7 @@ export const Guide: React.FC = () => {
         </article>
       )}
 
-      <div className="pt-6 flex justify-center">
+      <div className="pb-6 flex justify-center">
         <Button variant="outline" asChild size="lg" className="gap-2">
           <Link to={ROUTES.GUIDES}>
             <BookOpenText className="h-4 w-4" />
