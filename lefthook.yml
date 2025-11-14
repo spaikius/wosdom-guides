@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome-lint:
+      run: pnpm check
+    typecheck:
+      run: pnpm tsc --noEmit
+
+pre-push:
+  parallel: true
+  commands:
+    tests:
+      run: pnpm test
