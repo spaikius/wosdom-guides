@@ -16,5 +16,11 @@
     "title": "Canyon Clash",
     "icon": ":EVENT_CANYON_CLASH:",
     "description": null
+  },
+  {
+    "slug": "fire-crystals",
+    "title": "Fire Crystals",
+    "icon": ":ITEM_FIRE_CRYSTAL:",
+    "description": "Research & Buildings"
   }
 ]
