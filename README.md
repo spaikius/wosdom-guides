@@ -1,25 +1,30 @@
+Absolutely — here's a fully **updated**, **pnpm-friendly**, **cleaned-up**, and **slightly upgraded** version of your README.
+I preserved your tone, emojis, and style, but tightened the content, fixed npm references, and clarified some sections.
+
+---
+
 # 🧊 WOSdom Guides
 
-> **WOSdom (noun):** A collection of knowledge and questionable decisions from the WOS Alliance MiS.  
+> **WOSdom (noun):** A collection of knowledge and questionable decisions from the WOS Alliance MiS.
 > If you've ever lost a guide in Discord chaos — this site is your new safe haven.
 
 ---
 
 ## 🧭 Overview
 
-**WOSdom Guides** is a static, mobile-friendly knowledge base built for the **Whiteout Survival Alliance MiS** community.  
-It's designed to make browsing and reading guides easy (and maybe even fun) — without digging through endless Discord messages.
+**WOSdom Guides** is a static, mobile-friendly knowledge base built for the **Whiteout Survival - MiS Alliance**.
+It makes browsing and reading guides fast, clean, and drama-free — no more scrolling through Discord history.
 
 ---
 
 ## ✨ Features
 
-- 🧱 **Static Site** — Fast, lightweight, deployable anywhere (GitHub Pages, Netlify, etc.)
+- 🧱 **Static Site** — Fast, lightweight, deployable anywhere
 - 💻 **Modern Stack** — React 19, Vite, TypeScript, TanStack Router, Tailwind, shadcn/ui
-- 📱 **Responsive Layout** — Works beautifully on phones, tablets, and desktop
+- 📱 **Responsive Layout** — Beautiful on mobile, tablet, and desktop
 - 🌓 **Dark Mode First** — Because snow glare is no joke
-- 🪄 **Smooth Theming** — Theme toggle with subtle animations
-- 📚 **Markdown-Based Guides** — Simple to write and update
+- 🪄 **Smooth Theming** — Theme toggle with animations
+- 📚 **Markdown-Based Guides** — Easy to write, easy to maintain
 - 💬 **Built with mild chaos and caffeine**
 
 ---
@@ -50,17 +55,26 @@ cd wosdom-guides
 
 ### 2️⃣ Install dependencies
 
+> This project uses **pnpm**.
+> If you don't have it yet:
+
 ```bash
-npm install
+npm install -g pnpm
+```
+
+Then install packages:
+
+```bash
+pnpm install
 ```
 
 ### 3️⃣ Run the development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Open your browser and visit:
+Open your browser at:
 
 ```
 http://localhost:5173
@@ -73,48 +87,44 @@ http://localhost:5173
 ### Build the static site
 
 ```bash
-npm run build
+pnpm build
 ```
 
-> Builds and type-checks (`vite build && tsc`) to ensure everything compiles cleanly.
+> Runs `vite build` and TypeScript type-checking to ensure everything compiles cleanly.
 
 ### Preview your production build
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
-> Launches a local server so you can preview the `dist/` output as it will appear on GitHub Pages.
+> Serves the `dist/` folder exactly as it will appear on GitHub Pages.
 
 ---
 
-### 🧪 Development & Maintenance Commands
+## 🧪 Development & Maintenance Commands
 
-| Command                | Description                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------- |
-| `npm run dev`          | Start the local development server with **Vite**.                            |
-| `npm run build`        | Build the production site and run **TypeScript** type checks.                |
-| `npm run preview`      | Preview the production build locally using Vite's preview server.            |
-| `npm run test`         | Run all tests using **Vitest**.                                              |
-| `npm run format`       | Check code formatting with **Biome** (no changes written).                   |
-| `npm run format:write` | Automatically format all files with **Biome** (whitespace, layout, etc.).    |
-| `npm run lint`         | Check code for linting issues using **Biome** (dry run).                     |
-| `npm run lint:write`   | Automatically fix linting issues with **Biome** (safe autofixes only).       |
-| `npm run check`        | Run Biome's full project check — lint + format + type awareness (dry run).   |
-| `npm run check:write`  | Run Biome's full check and **apply all fixes** (includes import sorting). ✅ |
+| Command             | Description                                               |
+| ------------------- | --------------------------------------------------------- |
+| `pnpm dev`          | Start the Vite development server                         |
+| `pnpm build`        | Build for production + run TypeScript checks              |
+| `pnpm preview`      | Preview the built site locally                            |
+| `pnpm test`         | Run all tests with **Vitest**                             |
+| `pnpm format`       | Check formatting with **Biome** (no changes written)      |
+| `pnpm format:write` | Format all files with **Biome**                           |
+| `pnpm lint`         | Check linting issues (dry run)                            |
+| `pnpm lint:write`   | Automatically fix linting issues with Biome               |
+| `pnpm check`        | Biome full project check: lint + format + types (dry run) |
+| `pnpm check:write`  | Apply all Biome fixes, including import sorting ✔         |
 
----
-
-✅ **Tip:**
-Use `npm run check:write` instead of `format:write` if you also want Biome to **organize imports** and apply all safe automatic fixes in one go.
+> 💡 **Tip:**
+> Prefer `pnpm check:write` — it performs **all** autofixes (formatting, imports, lint fixes) in one shot.
 
 ---
 
 ## 📘 Contributing Guides
 
-Guides live in the **`guides/`** folder.
-
-Each guide has its own subfolder:
+Guides live inside the `guides/` folder.
 
 ```
 guides/
@@ -127,7 +137,7 @@ guides/
     stage-1.png
 ```
 
-When you add a new guide, register it in **`guides/guides.json`**:
+When you add a guide, register it in **`guides/guides.json`**:
 
 ```json
 [
@@ -144,42 +154,51 @@ When you add a new guide, register it in **`guides/guides.json`**:
 ]
 ```
 
-> 🧭 **Tip:**
-> The `"slug"` must match the guide folder name.
-> Images in the same folder are automatically linked when you use Markdown syntax like:
+> 🧭 **Rules:**
 >
-> ```markdown
-> ![Stage 1](./stage-1.png)
-> ```
+> - The `"slug"` **must match the folder name**
+> - Images in the guide folder can be referenced with:
+>
+>   ```markdown
+>   ![Stage 1](./stage-1.png)
+>   ```
 
 ---
 
 ## 🧑‍💻 Contributing Code
 
-1. Fork the repository
-2. Create a new branch for your feature or fix
-3. Commit your changes using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) style if possible
-4. Push and **open a Pull Request** 🎉
+1. Fork the repo
+2. Create a branch for your feature/fix
+3. Commit using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (optional but nice)
+4. Push and open a PR 🎉
 
-> No bureaucracy, no CI hoops — just make a PR and Spaikius will handle the rest 😄
+> No bureaucracy. No pipelines yelling at you.
+> Just make a PR — Spaikius will handle the rest 😄
 
 ---
 
 ## 📦 Deployment
 
-The site is automatically built using **Vite** and hosted on **GitHub Pages**.
+Deployment is automatic using GitHub Actions + GitHub Pages.
 
-- The `base` path is set to `/wosdom-guides/` in `vite.config.ts`.
-- During build, the `guides/` folder (with images) is copied into the `dist/` directory using `vite-plugin-static-copy`.
+- The site is built with **Vite**
+- The output is deployed from `dist/`
+- The Vite `base` path is set to:
 
-You can also deploy the `dist/` folder to any static hosting service.
+  ```ts
+  base: "/wosdom-guides/";
+  ```
+
+- Images inside `guides/` are copied into the build using `vite-plugin-static-copy`
+
+You can also deploy `dist/` to any static host: Netlify, Cloudflare Pages, Vercel (static), S3, etc.
 
 ---
 
 ## 📜 License
 
 This project is open-source under the [MIT License](LICENSE).
-You can copy, remix, and deploy it — just don't blame Spaikius if it snows in production. ☃️
+Copy it, remix it, deploy it — just don't blame Spaikius if it snows in production. ☃️
 
 ---
 
@@ -188,7 +207,3 @@ You can copy, remix, and deploy it — just don't blame Spaikius if it snows in 
 Created by **[Spaikius](https://github.com/spaikius)**
 For the **Whiteout Survival - MiS Alliance** ❄️
 Made with 💙 and mild chaos.
-
----
-
-> _"Code freezes are temporary. Blizzard events are forever."_
