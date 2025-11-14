@@ -1,0 +1,55 @@
+name: Guide / content update
+description: Request a new guide or changes to existing content
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help keep **WOSdom Guides** accurate and useful 📘
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: What kind of change is this?
+      options:
+        - New guide
+        - Update existing guide
+        - Fix typo / formatting
+        - Add / update images
+    validations:
+      required: true
+
+  - type: input
+    id: guide_slug
+    attributes:
+      label: Guide slug or title
+      description: If this is about an existing guide, include its slug or title.
+      placeholder: "e.g. canyon-clash"
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the new guide or the changes you'd like.
+      placeholder: |
+        For a new guide:
+        - Suggested title
+        - Short summary
+        - Key sections
+
+        For an update:
+        - What is wrong or outdated
+        - What should be changed
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References / screenshots
+      description: Game screenshots, links, or other resources.
+      placeholder: "Add any references here"
+    validations:
+      required: false

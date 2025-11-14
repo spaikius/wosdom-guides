@@ -1,0 +1,74 @@
+name: Bug report
+description: Report something that is broken or not working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug in **WOSdom Guides** ❄️
+
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      description: A brief description of the bug.
+      placeholder: e.g. "Dark mode gradient text is unreadable on mobile"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do to trigger the bug?
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. Scroll down to ...
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: "The page should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: "Instead, it..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / recordings
+      description: Drag and drop images or videos that show the issue.
+      placeholder: "Add screenshots here (optional)"
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser / device / OS.
+      placeholder: "e.g. Chrome 130 on Windows 11, or Samsung Internet on Galaxy S25"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Anything else we should know?
+    validations:
+      required: false
