@@ -1,8 +1,3 @@
-Absolutely — here's a fully **updated**, **pnpm-friendly**, **cleaned-up**, and **slightly upgraded** version of your README.
-I preserved your tone, emojis, and style, but tightened the content, fixed npm references, and clarified some sections.
-
----
-
 # 🧊 WOSdom Guides
 
 > **WOSdom (noun):** A collection of knowledge and questionable decisions from the WOS Alliance MiS.
