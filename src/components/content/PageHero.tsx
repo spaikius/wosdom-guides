@@ -40,7 +40,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
         {(showTitle || showHighlight) && (
           <h1
             className={cn(
-              'flex flex-wrap items-center font-bold tracking-tight gap-2',
+              'font-bold tracking-tight flex flex-wrap items-center gap-2',
               size === 'lg' ? 'text-4xl md:text-5xl' : 'text-3xl md:text-4xl',
               !showTitle && 'gap-0',
             )}
@@ -51,6 +51,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
               <span
                 className={cn(
                   'bg-hero-highlight bg-clip-text text-transparent',
+                  '[--tw-text-opacity:1]',
                   '[-webkit-text-fill-color:transparent]',
                 )}
               >
