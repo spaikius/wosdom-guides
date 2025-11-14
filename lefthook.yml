@@ -1,3 +1,7 @@
+exclude:
+  - dist/**
+  - node_modules/**
+
 pre-commit:
   parallel: true
   commands:
