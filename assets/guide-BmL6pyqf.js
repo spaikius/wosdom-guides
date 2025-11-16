@@ -29,7 +29,7 @@ const n=`# 🏭 **Foundry Battle Strategy Guide**
 🛠️ **2️⃣ Capture and Hold at Least One Repair Building**
 
 - Adds a steady **+600 AP/min** to your total.
-- Combined with both Prototypes, you’ll have a **huge AP/min lead** over the enemy in the first phase.
+- Combined with both Prototypes, you'll have a **huge AP/min lead** over the enemy in the first phase.
 
 🏛️ **3️⃣ Once the Imperial Foundry Opens (after 15 min)**
 
@@ -40,7 +40,7 @@ const n=`# 🏭 **Foundry Battle Strategy Guide**
 🎯 **4️⃣ Bait and Strike (Scattered Points Tactic)**
 
 - Let the enemy **collect points** in certain buildings.
-- When they’ve accumulated enough, **swoop in and clear them out!**
+- When they've accumulated enough, **swoop in and clear them out!**
 - Flipping a building releases **huge scattered point piles** - **gather them fast** (watch for **yellow dots** on the minimap).
 - This tactic can **swing the score dramatically** in your favor.
 
@@ -89,6 +89,7 @@ At ~15 min:
 > 🧠 **Use your enemy's greed against them!**
 
 - 🎯 **Intentionally leave some buildings for the enemy** to occupy.
+
   - Let them **collect points**, then **clear them out**.
   - When the building flips, it **scatters massive points** - **collect them fast!**
 
