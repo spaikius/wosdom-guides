@@ -1,7 +1,5 @@
-import DOMPurify from 'dompurify';
-import { marked } from 'marked';
 import { useCallback, useEffect, useState } from 'react';
-import { rewriteImagePaths, wrapImagesWithLightBox } from '@/lib/guides-utils';
+import { loadGuide } from '@/lib/guides-utils';
 
 type UseGuideResult = {
   html: string;
@@ -20,12 +18,8 @@ export function useGuide(slug: string): UseGuideResult {
     setError(undefined);
 
     try {
-      const file = await import(`@guides/${slug}/guide.md?raw`);
-      const markdown = rewriteImagePaths(file.default, slug);
-      const parsed = (await marked.parse(markdown)) as string;
-      const safe = DOMPurify.sanitize(parsed);
-      const wrapped = wrapImagesWithLightBox(safe);
-      setHtml(wrapped);
+      const guide = await loadGuide(slug);
+      setHtml(guide);
     } catch (err) {
       setError(err instanceof Error ? err : new Error('Failed to load guide'));
       setHtml('');
