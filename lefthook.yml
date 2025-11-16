@@ -14,4 +14,4 @@ pre-push:
   parallel: true
   commands:
     tests:
-      run: pnpm test || echo "Skipping tests... none found"
+      run: pnpm test
