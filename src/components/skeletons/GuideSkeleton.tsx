@@ -7,9 +7,9 @@ export const GuideSkeleton: React.FC = () => (
       {[1, 2, 3, 4].map((i) => (
         <div key={i}>
           <hr />
-          <Skeleton className="h-8 w-2/3" />
-          <Skeleton className="h-6 w-full" />
-          <Skeleton className="h-6 w-10/12" />
+          <Skeleton className="h-8 w-2/3 mb-2" />
+          <Skeleton className="h-6 w-full mb-1" />
+          <Skeleton className="h-6 w-10/12 mb-1" />
           <Skeleton className="h-6 w-7/12" />
         </div>
       ))}
