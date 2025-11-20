@@ -1,6 +1,7 @@
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { Footnote } from '@/components/content/Footnote';
 import { PageHero } from '@/components/content/PageHero';
+import { Paragraph } from '@/components/content/Paragraph';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { useGuides } from '@/hooks/useGuides';
@@ -24,11 +25,11 @@ export const Guides: React.FC = () => {
           />
         </div>
 
-        <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
+        <Paragraph>
           Welcome to the <span className="font-medium">WOS Alliance MiS</span>{' '}
           guide hub. Explore community wisdom, survival notes, and strategy
           breakdowns - all curated to help you stay one step ahead.
-        </p>
+        </Paragraph>
       </div>
 
       <section className="space-y-4 md:space-y-5">
