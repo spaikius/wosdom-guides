@@ -18,6 +18,12 @@
     "description": "Guide & Strategy"
   },
   {
+    "slug": "bear-trap",
+    "title": "Bear Trap",
+    "icon": ":EVENT_BEAR_TRAP:",
+    "description": "Feed the Fatso!"
+  },
+  {
     "slug": "fire-crystals",
     "title": "Fire Crystals",
     "icon": ":ITEM_FIRE_CRYSTAL:",
