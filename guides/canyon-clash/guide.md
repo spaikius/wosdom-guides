@@ -42,7 +42,7 @@
 > 🩸 **Teamwork wins Canyon Clash - not solo heroics.**
 > Hold your ground and support allies 💪
 
-![Stage 1 - Early Game](./stage-1.png)
+![Stage 1 - Early Game](./stage-1.webp)
 
 ---
 
@@ -54,7 +54,7 @@
 👥 Keep **players stationed at adjacent buildings** to **instantly occupy** a fortress the moment it opens
 🧱 **Fortresses are control hubs** - whoever owns them usually controls **the entire map flow**
 
-![Stage 2 - Fortress War](./stage-2.png)
+![Stage 2 - Fortress War](./stage-2.webp)
 
 ---
 
@@ -83,4 +83,4 @@
 ♻️ **Rotate marches** - ensure the Citadel is never empty  
 🏠 Continue **defending your other holdings** - losing territory still loses points
 
-![Stage 3 - Citadel Onslaught](./stage-3.png)
+![Stage 3 - Citadel Onslaught](./stage-3.webp)

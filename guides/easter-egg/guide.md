@@ -12,4 +12,4 @@ and for that, we salute you. 🫡
 Enjoy your victory, and remember:  
 the **real treasure** was the curiosity we broke along the way. 💙
 
-![Easter egg](./easter-egg.png)
+![Easter egg](./easter-egg.webp)

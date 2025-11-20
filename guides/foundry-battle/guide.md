@@ -115,7 +115,7 @@ At ~15 min:
 
 ---
 
-![Control Priority 1](./prio-1.png)
-![Control Priority 2](./prio-2.png)
-![Control Priority 3](./prio-3.png)
-![Control Priority 4](./prio-4.png)
+![Control Priority 1](./prio-1.webp)
+![Control Priority 2](./prio-2.webp)
+![Control Priority 3](./prio-3.webp)
+![Control Priority 4](./prio-4.webp)
