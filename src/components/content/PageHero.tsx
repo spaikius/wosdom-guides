@@ -27,7 +27,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
   return (
     <header
       className={cn(
-        'flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between w-full',
+        'flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between w-full mb-4',
         className,
       )}
     >

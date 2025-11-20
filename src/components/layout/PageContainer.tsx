@@ -13,7 +13,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   return (
     <section
       className={cn(
-        'w-full mx-auto space-y-8 md:space-y-10 pt-4 md:pt-6',
+        'w-full mx-auto space-y-8 md:space-y-10 md:pt-6',
         maxWidth,
         className,
       )}

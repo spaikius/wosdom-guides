@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router';
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { PageHero } from '@/components/content/PageHero';
+import { Paragraph } from '@/components/content/Paragraph';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Button } from '@/components/ui/button';
 import { PROJECT_NAME } from '@/config/constants';
@@ -10,35 +11,27 @@ import { cn } from '@/lib/utils';
 export const Index: React.FC = () => {
   return (
     <PageContainer>
-      <div className="relative">
-        <PageHero
-          size="lg"
-          highlight={PROJECT_NAME}
-          subtitle="WOS Alliance MiS · Knowledge hub"
-          badge={
-            <BadgeStrip>WOS Alliance MiS · Guides & Experiments</BadgeStrip>
-          }
-        />
+      <PageHero
+        size="lg"
+        highlight={PROJECT_NAME}
+        subtitle="WOS Alliance MiS · Knowledge hub"
+        badge={
+          <BadgeStrip className="hidden md:flex">
+            WOS Alliance MiS · Guides & Experiments
+          </BadgeStrip>
+        }
+      />
 
-        <div className="space-y-4 sm:space-y-6 pt-8">
-          <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
-            A cozy, dark-themed home for all things{' '}
-            <span className="font-medium">WOS Alliance MiS</span>. Browse
-            guides, survive the frost, and maybe ship a few fewer bugs along the
-            way.
-          </p>
+      <Paragraph>
+        A cozy, dark-themed home for all things{' '}
+        <span className="font-medium">WOS Alliance MiS</span>. Browse guides,
+        survive the frost, and maybe ship a few fewer bugs along the way.
+      </Paragraph>
 
-          <div className="flex justify-center pt-4 pb-2">
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="gap-2 shadow-sm"
-            >
-              <Link to={ROUTES.GUIDES}>Jump into Guides ❄️</Link>
-            </Button>
-          </div>
-        </div>
+      <div className="flex justify-center">
+        <Button asChild size="lg" variant="outline" className="gap-2 shadow-sm">
+          <Link to={ROUTES.GUIDES}>Jump into Guides ❄️</Link>
+        </Button>
       </div>
 
       <section
@@ -62,7 +55,7 @@ export const Index: React.FC = () => {
                 Built for late-night MiS tinkering.
               </span>
               <p className="hidden sm:block text-[11px] md:text-xs text-muted-foreground/90">
-                Guides and tools that don’t mind dark mode, caffeine, or
+                Guides and tools that don't mind dark mode, caffeine, or
                 refactors at 2am.
               </p>
             </div>

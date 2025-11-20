@@ -1,6 +1,7 @@
 import { BadgeStrip } from '@/components/content/BadgeStrip';
 import { Footnote } from '@/components/content/Footnote';
 import { PageHero } from '@/components/content/PageHero';
+import { Paragraph } from '@/components/content/Paragraph';
 import { GuideGrid } from '@/components/guide/GuideGrid';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { useGuides } from '@/hooks/useGuides';
@@ -11,24 +12,22 @@ export const Guides: React.FC = () => {
   return (
     <PageContainer>
       <div className="space-y-4 border-b border-border/60 pb-4 md:pb-6 mb-4">
-        <div className="flex items-center justify-between gap-4">
-          <PageHero
-            size="lg"
-            highlight="Guides"
-            subtitle="WOS Alliance MiS · Knowledge hub"
-            badge={
-              <BadgeStrip className="hidden md:flex">
-                {guides.length} guide{guides.length !== 1 ? 's' : ''} available
-              </BadgeStrip>
-            }
-          />
-        </div>
+        <PageHero
+          size="lg"
+          highlight="Guides"
+          subtitle="WOS Alliance MiS · Knowledge hub"
+          badge={
+            <BadgeStrip className="hidden md:flex">
+              {guides.length} guide{guides.length !== 1 ? 's' : ''} available
+            </BadgeStrip>
+          }
+        />
 
-        <p className="text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">
+        <Paragraph>
           Welcome to the <span className="font-medium">WOS Alliance MiS</span>{' '}
           guide hub. Explore community wisdom, survival notes, and strategy
           breakdowns - all curated to help you stay one step ahead.
-        </p>
+        </Paragraph>
       </div>
 
       <section className="space-y-4 md:space-y-5">
