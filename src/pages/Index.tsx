@@ -11,35 +11,27 @@ import { cn } from '@/lib/utils';
 export const Index: React.FC = () => {
   return (
     <PageContainer>
-      <div className="relative">
-        <PageHero
-          size="lg"
-          highlight={PROJECT_NAME}
-          subtitle="WOS Alliance MiS · Knowledge hub"
-          badge={
-            <BadgeStrip>WOS Alliance MiS · Guides & Experiments</BadgeStrip>
-          }
-        />
+      <PageHero
+        size="lg"
+        highlight={PROJECT_NAME}
+        subtitle="WOS Alliance MiS · Knowledge hub"
+        badge={
+          <BadgeStrip className="hidden md:flex">
+            WOS Alliance MiS · Guides & Experiments
+          </BadgeStrip>
+        }
+      />
 
-        <div className="space-y-4 sm:space-y-6 pt-8">
-          <Paragraph>
-            A cozy, dark-themed home for all things{' '}
-            <span className="font-medium">WOS Alliance MiS</span>. Browse
-            guides, survive the frost, and maybe ship a few fewer bugs along the
-            way.
-          </Paragraph>
+      <Paragraph>
+        A cozy, dark-themed home for all things{' '}
+        <span className="font-medium">WOS Alliance MiS</span>. Browse guides,
+        survive the frost, and maybe ship a few fewer bugs along the way.
+      </Paragraph>
 
-          <div className="flex justify-center pt-4 pb-2">
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="gap-2 shadow-sm"
-            >
-              <Link to={ROUTES.GUIDES}>Jump into Guides ❄️</Link>
-            </Button>
-          </div>
-        </div>
+      <div className="flex justify-center">
+        <Button asChild size="lg" variant="outline" className="gap-2 shadow-sm">
+          <Link to={ROUTES.GUIDES}>Jump into Guides ❄️</Link>
+        </Button>
       </div>
 
       <section

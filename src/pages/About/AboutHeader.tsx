@@ -4,20 +4,18 @@ import { Paragraph } from '@/components/content/Paragraph';
 import { PROJECT_NAME } from '@/config/constants';
 
 export const AboutHeader: React.FC = () => (
-  <header className="space-y-5">
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <PageHero
-        title="About"
-        highlight={PROJECT_NAME}
-        subtitle="Behind the frost · Why this exists"
-        badge={
-          <BadgeStrip className="mt-1 sm:mt-0">
-            MiS Alliance · Campfire of knowledge
-          </BadgeStrip>
-        }
-        size="lg"
-      />
-    </div>
+  <>
+    <PageHero
+      title="About"
+      highlight={PROJECT_NAME}
+      subtitle="Behind the frost · Why this exists"
+      badge={
+        <BadgeStrip className="hidden md:flex">
+          MiS Alliance · Campfire of knowledge
+        </BadgeStrip>
+      }
+      size="lg"
+    />
 
     <Paragraph>
       Welcome, survivor! This frosty corner of the web was made for{' '}
@@ -26,5 +24,5 @@ export const AboutHeader: React.FC = () => (
       guide someone posted three snowstorms ago. Think of this as our little
       campfire of knowledge - without the frostbite.
     </Paragraph>
-  </header>
+  </>
 );

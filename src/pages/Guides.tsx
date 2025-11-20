@@ -12,18 +12,16 @@ export const Guides: React.FC = () => {
   return (
     <PageContainer>
       <div className="space-y-4 border-b border-border/60 pb-4 md:pb-6 mb-4">
-        <div className="flex items-center justify-between gap-4">
-          <PageHero
-            size="lg"
-            highlight="Guides"
-            subtitle="WOS Alliance MiS · Knowledge hub"
-            badge={
-              <BadgeStrip className="hidden md:flex">
-                {guides.length} guide{guides.length !== 1 ? 's' : ''} available
-              </BadgeStrip>
-            }
-          />
-        </div>
+        <PageHero
+          size="lg"
+          highlight="Guides"
+          subtitle="WOS Alliance MiS · Knowledge hub"
+          badge={
+            <BadgeStrip className="hidden md:flex">
+              {guides.length} guide{guides.length !== 1 ? 's' : ''} available
+            </BadgeStrip>
+          }
+        />
 
         <Paragraph>
           Welcome to the <span className="font-medium">WOS Alliance MiS</span>{' '}
