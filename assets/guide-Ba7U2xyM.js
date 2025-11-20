@@ -69,7 +69,7 @@ const e=`# 🐻 **Bear Hunt - Strategy Guide**
 - 🪖 Bring your **best troops**, but remember:  
   → **Hero > troops** for buffs
 
-![Jessie First Skill](./jessie.png)
+![Jessie First Skill](./jessie.webp)
 
 ### ❌ Common Joiner Mistakes
 
@@ -123,5 +123,5 @@ Excellent for building **leader** and **joiner** setups.
 
 ## 📌 Best Heroes to Join Rally With
 
-![Joiner Heroes Tier List](./joiner-heroes.jpg)
+![Joiner Heroes Tier List](./joiner-heroes.webp)
 `;export{e as default};
