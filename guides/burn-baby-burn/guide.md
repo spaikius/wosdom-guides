@@ -31,6 +31,12 @@ Your job is support, not solo fighting.
 
 ### ✅ **Join rallies instantly.**
 
+### ✅ **Speed matters — open with solo attacks.**
+
+Our top 10–20 players will **solo their whales and strongest cities**.
+Everyone else should quickly **solo targets of equal or lower FC/power**.
+Fast hits at the start will break their frontline before rallies even land.
+
 Non-stop pressure = victory.
 
 ---
