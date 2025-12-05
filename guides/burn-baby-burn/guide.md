@@ -1,8 +1,3 @@
-Absolutely — here is a **cleaner, clearer, simplified version** with the **most important notes moved to the top** for instant visibility.
-I tightened the language so every point is fast and easy to understand.
-
----
-
 # 🌑 **FULL-SCALE WAR – QUICK GUIDE**
 
 ## **“FULL SCALE WAR _IS_ FULL SCALE WAR”**
@@ -101,3 +96,26 @@ We will coordinate in real time to:
 **BURN 2888 FIRST.**
 **Castle comes second.**
 **Stay tight, follow leaders, and keep the pressure constant.**
+
+---
+
+# 🛑 **SORRY MESSAGE**
+
+We are sorry for keeping things from you for so long.
+We’ve had **moles inside our ranks** — not spies from 2888, but **fellow 2921 members leaking information**.
+Because of this, we could not reveal our full plans earlier.
+We simply couldn't risk 2888 sniffing out what we were preparing.
+
+---
+
+### 📜 **Message from Spaikius to all MiS members**
+
+I want to apologize for lying to you and causing confusion.
+The message I sent about “with agreeing on 2888” was **different for every MiS member** — it was part of a test to identify the mole.
+
+I **do have suspicions** about who it is, but without solid proof, I cannot take action.
+So for now, I must stay quiet.
+
+And to the **mole** who actually took the bait:
+You got lucky this time.
+Even the worst of us are sometimes blessed by fortune.
