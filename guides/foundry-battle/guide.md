@@ -4,114 +4,193 @@
 
 ## ⚡ **TL;DR (Quick Summary)**
 
+- 🏆 **Only ALLIANCE Arsenal Points decide victory**
+  - Personal points = rewards only (MVP ≠ win)
+- ⏱️ Foundry lasts **1 hour** and has **3 phases**
 - 🎯 **Top Priorities:**
-  1️⃣ **Prototype I & II** - _Together produce 2,400 AP/min_ (equal to **4 Repair Sites!**)
-  2️⃣ **Imperial Foundry** - _1,800 AP/min when active_
-  👉 **Holding both Prototypes + Imperial = 4,200 AP/min total!**
+  1️⃣ **Prototype I & II** — _2,400 AP/min combined_ (**= 4 Repair Sites**)  
+  2️⃣ **Imperial Foundry** — _1,800 AP/min (Phase 2+)_
 
-- 🔒 **Always secure and defend Prototypes first**, then other buildings.
-- 🛠️ Repairs and Transit Stations add steady points and strategic flexibility.
-- 🤝 Reinforce allies, protect high-value sites, and **watch for scattered points** (yellow dots).
-- 🚫 This is the only event where you should use your Healing Speedups, since "tap healing" isn't available during Foundry!
-- 🐉 **Combat buffs and pets** work - use them for an edge
-- 🕒 You can **leave up to 12 min** and re-enter with **healed troops**.
+👉 **Holding both Prototypes + Imperial = 4,200 AP/min**
+
+- 🔒 Secure **Prototypes first**, then Imperial, then Repairs
+- 💣 **Weapon Workshops** appear **randomly in Phase 3 (30mins)** (2 waves, huge points = 100k!)
+  - 👀 **Assign scouts to scan the map every 1-2 minutes**
+  - 📣 **Immediately post Workshop locations in Squad Chat**
+- 🚫 This is the **only event** where Healing Speedups should be used  
+  _(tap healing is disabled)_
+- 🐉 **Combat buffs & pets work**
+- 🕒 You may **leave up to 12 min** and rejoin with **healed troops**
+
+---
+
+## ⏱️ **Battle Phases (VERY IMPORTANT)**
+
+### 🟢 **Phase 1 — Opening (Start → 15 min)**
+
+Unlocked:
+
+- 🧪 Prototype I & II
+- 🛠️ 4× Repair Facilities
+- 🔥 Boiler Room
+- 🚉 Transit Station
+
+🎯 **Goals:**
+
+- Secure **first control bonuses**
+- Lock down **both Prototypes**
+
+---
+
+### 🟡 **Phase 2 — Mid Game (15 min+)**
+
+Unlocked:
+
+- 🏛️ **Imperial Foundry**
+- 💣 Munition Warehouse (combat buff)
+- ⚔️ Mercenary Camp (strike teams)
+
+🎯 **Goals:**
+
+- Immediately secure **Imperial Foundry**
+- Shift strongest players to **Imperial + Prototypes**
+
+---
+
+### 🔴 **Phase 3 — End Game (~30 min+)**
+
+Unlocked:
+
+- 💥 **Weapon Workshops**
+
+  - Appear **randomly**
+  - Spawn in **2 waves**
+  - Each gives **~4,000+ AP**
+
+🎯 **Goals:**
+
+- Constantly **scan the map**
+- Capture workshops **the moment they appear**
+- These can **decide the winner**
+
+> ⚠️ No system notification — map awareness wins here.
 
 ---
 
 ## ⚔️ **Quick Strategy Summary**
 
-🧪 **1️⃣ Secure and Defend Both Prototype Buildings (Top Priority!)**
+### 🧪 **1️⃣ Secure and Defend Both Prototype Buildings (TOP PRIORITY)**
 
-- These two alone generate **2,400 AP/min**, equal to **four Repair Facilities** combined.
-- Keep them reinforced at all times - **losing them costs massive points**.
-- These are your **core control points** for early dominance.
-
-🛠️ **2️⃣ Capture and Hold at Least One Repair Building**
-
-- Adds a steady **+600 AP/min** to your total.
-- Combined with both Prototypes, you'll have a **huge AP/min lead** over the enemy in the first phase.
-
-🏛️ **3️⃣ Once the Imperial Foundry Opens (after 15 min)**
-
-- **Drop control of a Repair building** if needed and **secure the Imperial Foundry** immediately.
-- Holding **Imperial + both Prototypes** yields **4,200 AP/min** - an unmatched point advantage.
-- Reinforce these three structures with your **strongest members** to lock in victory.
-
-🎯 **4️⃣ Bait and Strike (Scattered Points Tactic)**
-
-- Let the enemy **collect points** in certain buildings.
-- When they've accumulated enough, **swoop in and clear them out!**
-- Flipping a building releases **huge scattered point piles** - **gather them fast** (watch for **yellow dots** on the minimap).
-- This tactic can **swing the score dramatically** in your favor.
-
-## ⏱️ **Critical Timing: First Control Points**
-
-> 🕐 _Imperial Foundry, Munitions Warehouse, and Mercenary Camp_
-> ⏳ **Cannot be controlled until after the first 15 minutes.**
-
-At ~15 min:
-
-- Strongest players **transfer** their garrisons (Prototypes, Boiler, Transit) to others.
-- Then **teleport mid** to secure **Imperial Foundry**.
+- **2,400 AP/min total**
+- Equal to **four Repair Facilities**
+- Losing a Prototype is **devastating**
+- Keep **strong garrisons at all times**
 
 ---
 
-## 🎯 **First Control Point Priorities**
+### 🛠️ **2️⃣ Capture and Hold at Least One Repair Facility**
 
-1. 🧪 **Prototype** - 1200 AP/min
-2. 🚉 **Central Transit Station** - 50% Teleport, but only 240 AP/min
-3. 🔥 **Boiler Room** - Faster Control Time, but only 240 AP/min
-4. 🛠️ **Repair Facilities** - 600 AP/min
+- **+600 AP/min**
+- Provides early stability
+- Can be **sacrificed later** for Imperial if needed
+
+---
+
+### 🏛️ **3️⃣ Secure Imperial Foundry Immediately (Phase 2)**
+
+- Opens at **~15 min**
+- **Drop a Repair** if required — Imperial is worth it
+- **Imperial + Prototypes = 4,200 AP/min**
+- Reinforce with your **strongest players**
+
+---
+
+### 💣 **4️⃣ Weapon Workshops (Phase 3 Swing Factor)**
+
+- Spawn **randomly**, no alert
+- Appear in **two waves**
+- Each grants **massive burst points**
+- Assign players to **map-watch duty**
+
+---
+
+### 🎯 **5️⃣ Bait and Strike (Scattered Points Tactic)**
+
+- Let enemies **stack points** in buildings
+- Clear them at peak value
+- When a building flips → **points scatter**
+- 🚨 Watch **yellow dots** on the mini-map
+- **Teleport and collect FAST**
+
+---
+
+## ⏱️ **Critical Timing: First Control Points**
+
+> 🕐 _Imperial, Munition, Mercenary_
+> ⛔ **Cannot be captured before ~15 minutes**
+
+At ~15 min:
+
+- Strongest players **transfer garrisons**
+- Others hold early buildings
+- Core team **teleports mid**
+- Secure **Imperial Foundry FIRST**
+
+---
+
+## 🎯 **First Control Priority Order**
+
+1. 🧪 **Prototype** — 1,200 AP/min
+2. 🏛️ **Imperial Foundry** — 1,800 AP/min
+3. 🛠️ **Repair Facility** — 600 AP/min
+4. 🔥 Boiler / 🚉 Transit / ⚔️ Merc / 💣 Munition — 240 AP/min
 
 ---
 
 ## 🛡️ **Defense & Reinforcement Strategy**
 
-- **Garrison** **Prototype buildings** with **your strongest troops and members**.
-- **Reinforce allies** when attacked by enemy.
-- **Sneaky defense:** reinforce weaker players likely to be targeted to gain **defensive kills** and **drain enemy troops**.
-- Always **use counter-recon** (Enemies can not scout you)
+- Garrison **Prototypes & Imperial** with top power
+- Reinforce allies under attack
+- **Defensive kills matter**
+- Reinforce weaker allies to **bait enemy losses**
+- Always use **Counter-Recon**
 
 ---
 
 ## 💥 **Scattered Points Awareness**
 
-> ⚠️ Scattered points win or lose battles
+> ⚠️ Scattered points can WIN or LOSE Foundry
 
-- When a building is lost, **tons of points scatter** across the map.
-- Watch for **yellow dots on the mini-map** - they mark scattered points!
-- **teleport and collect** them -> These Points sometimes can WIN the game!
+- Buildings drop **huge point piles** when flipped
+- Yellow dots = **free points**
+- Late-game scatters are often **decisive**
 
 ---
 
 ## 🎭 **Bait-and-Clear Strategy**
 
-> 🧠 **Use your enemy's greed against them!**
+> 🧠 _Punish greed_
 
-- 🎯 **Intentionally leave some buildings for the enemy** to occupy.
-
-  - Let them **collect points**, then **clear them out**.
-  - When the building flips, it **scatters massive points** - **collect them fast!**
-
-- ⚠️ The same applies to **you** -
-  If no one is attacking your building, they may be **waiting until it's full of points** before swooping in to clear it!
+- Leave some buildings intentionally
+- Let enemies accumulate points
+- Clear → collect scatters
+- ⚠️ If no one attacks your building, assume they're waiting
 
 ---
 
-## 📊 **Alliance Points (AP) Table**
+## 📊 **Alliance Arsenal Points Table**
 
-| Building               | First Control | Occupation   | Notes                           |
-| ---------------------- | ------------- | ------------ | ------------------------------- |
-| 🏛️ **Imperial**        | 9000 AP       | +1800 AP/min | -                               |
-| 🧪 **Prototype**       | 6000 AP       | +1200 AP/min | -                               |
-| 🛠️ **Repair**          | 3000 AP       | +600 AP/min  | -                               |
-| 🔥 **Boiler**          | 1200 AP       | +240 AP/min  | -                               |
-| 🚉 **Transit Station** | 1200 AP       | +240 AP/min  | _Teleport −50%_                 |
-| ⚔️ **Mercenary**       | 1200 AP       | +240 AP/min  | -                               |
-| 💣 **Munition**        | 1200 AP       | +240 AP/min  | _Damage Boost & Reduction +15%_ |
+| Building         | First Control | Occupation  | Notes                   |
+| ---------------- | ------------- | ----------- | ----------------------- |
+| 🏛️ **Imperial**  | 9,000 AP      | +1,800 /min | Core win condition      |
+| 🧪 **Prototype** | 6,000 AP      | +1,200 /min | Highest priority        |
+| 🛠️ **Repair**    | 3,000 AP      | +600 /min   | Stable income           |
+| 🔥 **Boiler**    | 1,200 AP      | +240 /min   | Faster control          |
+| 🚉 **Transit**   | 1,200 AP      | +240 /min   | −50% teleport cooldown  |
+| ⚔️ **Mercenary** | 1,200 AP      | +240 /min   | Strike teams            |
+| 💣 **Munition**  | 1,200 AP      | +240 /min   | +15% damage & reduction |
 
-> 🏆 **Point Priority:**
-> Imperial → Prototype → Repair → Boiler/Transit/Mercenary/Munition
+> 🏆 **Point Priority:** > **Imperial → Prototype → Repair → Everything else**
 
 ---
 
