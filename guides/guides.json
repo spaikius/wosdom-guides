@@ -28,5 +28,11 @@
     "title": "Fire Crystals",
     "icon": ":ITEM_FIRE_CRYSTAL:",
     "description": "Research & Buildings"
+  },
+  {
+    "slug": "project-trinity",
+    "title": "Joint Alliance",
+    "icon": ":EVENT_RETURN_TO_TUNDRA:",
+    "description": "MiS, RoK, HxH & WLF"
   }
 ]
