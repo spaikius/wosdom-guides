@@ -1,0 +1,1 @@
+import{j as m,b as o}from"./index-B-J2_byb.js";const r=({children:s,className:a,maxWidth:t="max-w-3xl",...e})=>m.jsx("section",{className:o("w-full mx-auto space-y-8 md:space-y-10 md:pt-6",t,a),...e,children:s});export{r as P};
