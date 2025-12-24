@@ -27,6 +27,9 @@
   - **Troop Camps**
   - **War Academy**
 - Avoid wasting RFC on low-value buildings.
+  - **Infirmary**
+  - **Embassy**
+  - **Command Center**
 
 ---
 
@@ -38,23 +41,35 @@
 **Key Points**
 
 - Shards are separate — they **don't replace** FC/RFC.
-- Map your research route — don't scatter upgrades.
+- Research only during SvS Prep phase, use your research / General speed ups
+- Map your research route — don't scatter upgrades. Research only one troop type at the time
+  - Infantry -> Marksman -> Lancer
+  - Infantry -> Lancer -> Marksman
 - Converting too much steel will drain you fast.
+  - Never go bellow 2m steel
 
 ---
 
-## 🧠 **4. Advanced Research Advice (War Academy)**
+## 🧠 **4. Research Advice (War Academy)**
 
 - **Unlock all T11 troop types first**
-  (Do this before the final 3 expensive nodes)
+  (Do not invest in the final 3 nodes)
 - **Save your steel** — convert only what you can afford.
   - Keep **~2M steel** minimum
-  - Steel → shard rate: **5,000 steel → 1 shard**
+  - Steel → shard rate: **5,000 steel → 1 shard**,
 - **FC → Shards conversion** is okay **only** if you have FC overflow.
 
   - Up to 200 FC/day → **10 FC → 13 shards**
 
 - Don't convert FC aggressively — you'll need FC/RFC for buildings.
+- Research costs for a single Helios troop type:
+  - 13,405 Fire Crystal Shards
+  - 3,985,000 Steel
+  - Base research time: 270 days.
+  - Research time with buffs (85% base) + State buff (10%) + Vice president buff (10%): 132 days.
+- 👉 **[War Academy Calculator](https://wostools.net/war-academy-calculator)**
+
+![War Academy research Costs](./war-academy-research.webp)
 
 ---
 
@@ -77,7 +92,7 @@
 ## 📝 **6. TL;DR Quick Priorities**
 
 - **FC:** Spend carefully — needed later.
-- **RFC:** Main late-game blocker — save aggressively.
+- **RFC:** Main late-game blocker — start saving them as soon as you can
 - **Shards:** Prioritize **T11 unlocks → key troop upgrades**.
 - **Steel:** Don't drain it; keep **>2M**.
 - **Goal:** Advance **buildings + research + troops** together without starving any resource.
