@@ -1,9 +1,15 @@
 [
   {
-    "slug": "sunfire-castle-svs",
+    "slug": "svs-sfc",
     "title": "Sunfire Castle (SvS)",
     "icon": ":EVENT_SUNFIRE_CASTLE:",
     "description": "Strategy"
+  },
+  {
+    "slug": "rally-handbook",
+    "title": "Rally Leaders & Joiners",
+    "icon": ":BTN_RALLY:",
+    "description": "Handbook"
   },
   {
     "slug": "foundry-battle",
