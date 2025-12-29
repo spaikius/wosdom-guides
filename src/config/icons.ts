@@ -1,4 +1,5 @@
 import Default_Icon from '@/assets/default_icon.png';
+import Btn_Rally_Icon from '@/assets/icons/btn_rally.png';
 import Event_BearTrap_Icon from '@/assets/icons/event_bear_trap.png';
 import Event_CanyonClash_Icon from '@/assets/icons/event_canyon_clash.png';
 import Event_FoundryBattle_Icon from '@/assets/icons/event_foundry_battle.png';
@@ -8,6 +9,8 @@ import Item_FireCrystal_Icon from '@/assets/icons/item_fire_crystal.png';
 
 export const ICONS = {
   ':DEFAULT:': Default_Icon,
+
+  ':BTN_RALLY:': Btn_Rally_Icon,
 
   ':EVENT_BEAR_TRAP:': Event_BearTrap_Icon,
   ':EVENT_CANYON_CLASH:': Event_CanyonClash_Icon,
