@@ -134,6 +134,10 @@ Only troop level, ratio, troop Fire Crystal level, and first hero selection matt
 
 > A consistent joiner adds **more real power** than an inconsistent spender.
 
+## Setup your formations in advance!
+
+![formations](./formations.webp)
+
 ---
 
 # 🧠 Alliance Reality Check
