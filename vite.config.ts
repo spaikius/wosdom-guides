@@ -9,7 +9,7 @@ import { fileURLToPath, URL } from "node:url";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  base: "/wosdom-guides/",
+  base: "/",
   plugins: [
     tanstackRouter({
       target: "react",
