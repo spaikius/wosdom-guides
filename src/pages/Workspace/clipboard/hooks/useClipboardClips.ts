@@ -3,14 +3,11 @@ import { useCopyToClipboard, useLocalStorage } from '@uidotdev/usehooks';
 import { useCallback, useState } from 'react';
 
 import { getStorageKey } from '@/lib/storage-utils';
+import { uid } from '@/lib/uid-utils';
 import type { Clip, ClipFormValues } from '@/types/clipboard';
 
 const STORAGE_KEY = getStorageKey('clipboard');
 export const MAX_CHARS = 256;
-
-function uid(): string {
-  return crypto.randomUUID();
-}
 
 export function useClipboardClips() {
   const [clips, setClips] = useLocalStorage<Clip[]>(STORAGE_KEY, []);

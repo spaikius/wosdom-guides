@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import type { Clip, ClipFormValues } from '@/types/clipboard';
-import { MAX_CHARS } from './useClipboardClips';
+import { MAX_CHARS } from '../hooks/useClipboardClips';
 
 const emptyForm: ClipFormValues = { title: '', content: '', color: null };
 
@@ -82,7 +82,7 @@ export function ClipForm({
           value={form.content}
           onChange={(e) => setField('content', e.target.value)}
           placeholder="What should be copied?"
-          className="min-h-[110px]"
+          className="min-h-27.5"
           maxLength={MAX_CHARS}
         />
       </div>

@@ -35,5 +35,12 @@
     "source.organizeImports.biome": "explicit"
   },
   "editor.formatOnSave": true,
-  "cSpell.words": ["lightbox", "sunfire", "wosdom"]
+  "cSpell.words": [
+    "lightbox",
+    "nums",
+    "sunfire",
+    "uidotdev",
+    "usehooks",
+    "wosdom"
+  ]
 }
