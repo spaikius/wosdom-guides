@@ -7,8 +7,8 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import type { Clip, ClipFormValues } from '@/types/clipboard';
+import { MAX_CHARS } from '../hooks/useClipboardClips';
 import { ClipForm } from './ClipForm';
-import { MAX_CHARS } from './useClipboardClips';
 
 export function ClipDialog({
   mode,
@@ -36,7 +36,7 @@ export function ClipDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[520px]">
+      <DialogContent className="sm:max-w-130">
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>

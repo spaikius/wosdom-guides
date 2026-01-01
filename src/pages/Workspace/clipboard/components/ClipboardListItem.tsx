@@ -1,8 +1,8 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import { Check, Copy, GripVertical, Pencil, Trash2 } from 'lucide-react';
+import { GripVertical, Pencil, Trash2 } from 'lucide-react';
 import type React from 'react';
-
+import { CopyButton } from '@/components/CopyButton';
 import { Button } from '@/components/ui/button';
 import { getTintClass } from '@/lib/style-utils';
 import { cn } from '@/lib/utils';
@@ -87,7 +87,7 @@ export function ClipboardListItem({
       {/* Right side actions */}
       <div className="relative flex shrink-0 items-center gap-2">
         {/* Edit/Delete appear on hover but do NOT shift layout: absolute overlay */}
-        <div className="relative h-8 w-[72px]">
+        <div className="relative h-8 w-18">
           <div
             className={cn(
               'absolute inset-0 flex items-center justify-end gap-1 transition',
@@ -126,31 +126,7 @@ export function ClipboardListItem({
           </div>
         </div>
 
-        {/* Copy button */}
-        <Button
-          size="sm"
-          className={cn(
-            'h-8 w-[104px] justify-center gap-2 px-3 transition-colors',
-            isCopied
-              ? 'bg-emerald-600 text-white hover:bg-emerald-600'
-              : 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-          )}
-          onClick={(e) => {
-            e.stopPropagation();
-            onCopy(clip);
-          }}
-          title="Copy"
-        >
-          {isCopied ? (
-            <>
-              <Check className="h-4 w-4" /> Copied
-            </>
-          ) : (
-            <>
-              <Copy className="h-4 w-4" /> Copy
-            </>
-          )}
-        </Button>
+        <CopyButton onCopy={() => onCopy(clip)} isCopied={isCopied} />
       </div>
     </div>
   );
