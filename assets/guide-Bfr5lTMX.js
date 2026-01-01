@@ -8,7 +8,6 @@ const n=`# Rally Assignments
 - **[HKM] Kangaroo~~~鼠**
 - **[HKM] #STAR**
 - **[HKM] Dr Evil Minion**
-- **[HKM] yourmoms**
 
 # Assignments
 

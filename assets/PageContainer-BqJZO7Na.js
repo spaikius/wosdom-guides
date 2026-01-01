@@ -1,0 +1,1 @@
+import{j as m,e as o}from"./index-CMRHP435.js";const r=({children:s,className:a,maxWidth:e="max-w-3xl",...t})=>m.jsx("section",{className:o("w-full mx-auto space-y-8 md:space-y-10 md:pt-6",e,a),...t,children:s});export{r as P};
