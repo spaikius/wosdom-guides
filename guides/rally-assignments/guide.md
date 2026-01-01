@@ -4,10 +4,10 @@
 
 - **[MiS] Zantas**
 - **[HKM] Paros**
-- **[HKM] MASTERofPUPPETS**
 - **[HKM] Kangaroo~~~鼠**
 - **[HKM] #STAR**
 - **[HKM] Dr Evil Minion**
+- **[HKM] yourmoms**
 
 # Assignments
 
@@ -33,7 +33,7 @@
 - 6 [HKM]Kuba B12 (From [MiS])
 - 7 [HKM]freeze (From [MiS])
 
-## **[HKM] MASTERofPUPPETS**
+## **[HKM] Kangaroo~~~鼠**
 
 - 1 [HKM]Leo1995 (from [HxH])
 - 2 [HKM]CaitMawr (from [HxH])
@@ -42,22 +42,23 @@
 - 5 [HKM]geosicleber 252 (from [ROK])
 - 6 [HKM]Jorenji Quinn (from [VLF])
 - 7 [HKM]Aga (from [VLF])
-- 8 [HKM]yourmoms (from [HxH])
+- 8 [HKM]Capy Farm (from [VLF])
 
-## **[HKM] Kangaroo~~~鼠**
+## **[HKM] #STAR**
 
-- 1 [HKM]Capy Farm (from [VLF])
+- 1 [HKM]ESREF TEK (from [ROK])
 - 2 [HKM]Black Cat ツ (from [MiS])
 - 3 [HKM]Belmund0 (from [MiS])
 - 4 [HKM]RAJU (from [MiS])
 - 5 [HKM]Tomato 番茄 (from [MiS])
 - 6 [HKM]Witcher (from [MiS])
 - 7 [HKM]ʕ·ᴥ·ʔK킼킼킼ᴷᴵᴷ (from [ROK])
+- 8 [HKM]Shironeko (from [MiS])
 
-## **[HKM] #STAR**
+## **[HKM] yourmoms**
 
-- 1 [HKM]Shironeko (from [MiS])
-- 2 [HKM]ESREF TEK (from [ROK])
+- 1 [HKM]Zestrax (from [HxH])
+- 2 [HKM]Greybeard (from [HxH])
 - 3 [HKM]QueenScobar (from [VLF])
 - 4 [HKM]Josike (from [VLF])
 - 5 [HKM]Lucario (from [HxH])
@@ -75,11 +76,6 @@
 - 6 [HKM]mahmoud (from [HxH])
 - 7 [HKM]Woy02 (from [HxH])
 - 8 [HKM]Virus (from [HxH])
-
-## Free of duty
-
-- [HxH]Zestrax
-- [HxH]Greybeard
 
 ## ⚠️ IMPORTANT NOTICE for Zantas Rally Joiners!
 
