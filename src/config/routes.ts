@@ -3,5 +3,5 @@ export const ROUTES = {
   GUIDES: '/guides',
   GUIDE: '/guides/$slug',
   ABOUT: '/about',
-  CLIPBOARD: '/clipboard',
+  WORKSPACE: '/workspace',
 } as const;
